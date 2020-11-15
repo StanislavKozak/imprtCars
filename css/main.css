@@ -2422,6 +2422,11 @@ footer .copyright {
   .orange-box {
     margin-top: 0px;
     margin-bottom: 40px;
+    left: 15px;
+    right: unset;
+  }
+  .form {
+    max-width: 90% !important;
   }
   .section__header {
     font-size: 14px;
@@ -2605,11 +2610,13 @@ footer .copyright {
   }
   .section--main {
     min-height: auto;
-    padding-top: 0 !important;
+    padding-top: 140px !important;
     padding-bottom: 75px !important;
    }
   .main__content-container {
     padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .section--reviews {
     background-image: none;
