@@ -2493,19 +2493,19 @@ footer .copyright {
   .section--stages .slick-arrow{
     top: 65%;
   }
-  .car-selection .form p {
-    font-size: 8px !important;
-  }
-  .car-selection .form label {
-     font-size: 8px !important;
-     margin-bottom: 0px;
-   }
-  .car-selection .form .form-check label {
-    font-size: 8px !important;
-  }
-  .car-selection .form input, .car-selection .form select {
-    font-size: 8px !important;
-  }
+  /*.car-selection .form p {*/
+  /*  font-size: 8px !important;*/
+  /*}*/
+  /*.car-selection .form label {*/
+  /*   font-size: 8px !important;*/
+  /*   margin-bottom: 0px;*/
+  /* }*/
+  /*.car-selection .form .form-check label {*/
+  /*  font-size: 8px !important;*/
+  /*}*/
+  /*.car-selection .form input, .car-selection .form select {*/
+  /*  font-size: 8px !important;*/
+  /*}*/
   .car-selection .form .form-left .form-row:last-child {
     -webkit-box-pack: start !important;
     -ms-flex-pack: start !important;
