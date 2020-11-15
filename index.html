@@ -15,32 +15,33 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/constants.css">
-  <link rel="stylesheet" href="css/range.css">
-  <link rel="stylesheet" href="css/slick.css">
-  <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/constants.css">
+  <link rel="stylesheet" href="./css/range.css">
+  <link rel="stylesheet" href="./css/slick.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/media.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-<script src="js/jquery.js"></script>
+<script src="./js/jquery.js"></script>
 <nav class="top-nav__menu">
   <div class="container top-nav__container">
     <div class="row align-items-center topnav__cities">
-      <a href="#">Киев</a>
-      <a href="#">Харьков</a>
-      <a href="#">Одесса</a>
-      <a href="#">Днепр</a>
+      <a href="#contacts">Киев</a>
+      <a href="#contacts">Харьков</a>
+      <a href="#contacts">Одесса</a>
+      <a href="#contacts">Днепр</a>
     </div>
     <div class="top-nav__divider"></div>
     <div class="row align-items-center topnav__bottom">
       <a href="#main" onclick="document.querySelector('.top-nav__menu').classList.remove('show')">Главная</a>
-      <a href="#stages" onclick="document.querySelector('.top-nav__menu').classList.remove('show')">Этапы сотрудничества</a>
+      <a href="#stages" onclick="document.querySelector('.top-nav__menu').classList.remove('show')">Этапы
+        сотрудничества</a>
       <a href="#catalog" onclick="document.querySelector('.top-nav__menu').classList.remove('show')">Каталог</a>
       <a href="#reviews" onclick="document.querySelector('.top-nav__menu').classList.remove('show')">Отзывы</a>
       <a href="#team" onclick="document.querySelector('.top-nav__menu').classList.remove('show')">Команда</a>
@@ -50,7 +51,7 @@
 </nav>
 <header>
   <div class="container">
-    <div class="row top">
+    <div class="top">
       <div class="top__logo">
         <a href="#">
           <img src="./imgs/svg/logo.svg" alt="Import Cars">
@@ -67,7 +68,7 @@
           <a class="p2 active" href="">RU</a>
           <a class="p2" href="">UA</a>
         </div>
-        <a class="p2 btn-core btn-orange top__callback--btn" data-toggle="modal" data-target="#callback__modal" href="">ЗАКАЗАТЬ
+        <a class="p2 btn-core btn-orange top__callback--btn" data-toggle="modal" data-target="#callback__modal" href>ЗАКАЗАТЬ
           ЗВОНОК</a>
         <a class="btn-core btn-orange top__callback--btn--mob" href="tel:+380674746373">
           <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -82,7 +83,8 @@
         </a>
         <button class="navbar-toggler d-block d-lg-none" type="button" data-toggle="collapse"
                 data-target="#siteNavigation" aria-controls="siteNavigation" aria-expanded="false"
-                aria-label="Toggle navigation" onclick="document.querySelector('.top-nav__menu').classList.toggle('show')">
+                aria-label="Toggle navigation"
+                onclick="document.querySelector('.top-nav__menu').classList.toggle('show')">
           <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M0.406239 4.06248H12.5937C12.818 4.06248 13 3.88046 13 3.65624C13 3.43198 12.818 3.25 12.5937 3.25H0.406239C0.18198 3.25 0 3.43201 0 3.65624C0 3.88046 0.182014 4.06248 0.406239 4.06248Z"
@@ -101,27 +103,27 @@
 </header>
 
 
-
 <section id="main" class="section section--main">
   <div class="container">
     <div class="row">
       <div class="col-lg-1 d-none d-lg-block"></div>
-      <div class="col-lg-5 main__content-container">
+      <div class="col-md-7 col-lg-5 main__content-container">
         <h1 class="section__header text-white">Авто из США</h1>
         <p class="section__text  text-white">
           Ответьте на 5 вопросов чтобы получить от наших экспертов по подбору 5-10 вариантов авто под ваши пожелания
           + Подарок на выбор
           от нашей компании
         </p>
-        <a href="#" class="p2 btn-core btn-orange d-inline-block">Пройти тест</a>
+        <a href="#" class="p2 btn-core btn-orange d-inline-block" data-toggle="modal" data-target="#test__modal">Пройти
+          тест</a>
       </div>
       <div class="col-1 d-none d-lg-block"></div>
-      <div class="col-lg-5">
+      <div class="col-lg-5 orange-box-ordered" style="position: static;">
         <div class="orange-box main__orange-box">
           <p class="orange-box__header">
             Цена услуг снижена!
           </p>
-          <div class="d-flex align-items-center mb-2">
+          <div class="d-flex align-items-center mb-1 mb-md-2">
             <p class="orange-box__new-price">750$</p>
             <p class="orange-box__old-price">990$</p>
           </div>
@@ -135,35 +137,35 @@
 </section>
 <section class="section section--main-bottom">
   <div class="container">
-    <div class="row">
-      <div class="col-6 col-md-4 col-lg-3 p-0">
+    <div class="row main-bottom-slider">
+      <div class="col-6 col-md-3 p-0">
         <div class="main__card gray">
           Сопровождения на всех этапах: от выбора авто - до вручения ключей
         </div>
       </div>
-      <div class="col-6 col-md-4 col-lg-3  p-0">
+      <div class="col-6 col-md-3  p-0">
         <div class="main__card p-0">
-          <img src="imgs/card1.jpg" alt="">
+          <img src="./imgs/card1.jpg" alt="">
         </div>
       </div>
-      <div class="col-6 col-md-4 col-lg-3 p-0">
+      <div class="col-6 col-md-3 p-0">
         <div class="main__card blue">
           Гарантия итоговой цены*
           и сохранности авто во
           время транспортировки
         </div>
       </div>
-      <div class="col-6 col-md-4 col-lg-3  p-0">
+      <div class="col-6 col-md-3  p-0">
         <div class="main__card p-0">
-          <img src="imgs/card2.jpg" alt="">
+          <img src="./imgs/card2.jpg" alt="">
         </div>
       </div>
-      <div class="col-6 col-md-4 col-lg-3 p-0">
+      <div class="col-6 col-md-3 p-0">
         <div class="main__card p-0">
-          <img src="imgs/card3.jpg" alt="">
+          <img src="./imgs/card3.jpg" alt="">
         </div>
       </div>
-      <div class="col-6 col-md-4 col-lg-3 p-0">
+      <div class="col-6 col-md-3 p-0">
         <div class="main__card orange">
           <svg width="164" height="75" class="orange__detail" viewBox="0 0 164 75" fill="none"
                xmlns="http://www.w3.org/2000/svg">
@@ -176,12 +178,12 @@
           метод проверки авто
         </div>
       </div>
-      <div class="col-6 col-md-4 col-lg-3 p-0">
+      <div class="col-6 col-md-3 p-0">
         <div class="main__card p-0">
-          <img src="imgs/card4.jpg" alt="">
+          <img src="./imgs/card4.jpg" alt="">
         </div>
       </div>
-      <div class="col-6 col-md-4 col-lg-3 p-0">
+      <div class="col-6 col-md-3 p-0">
         <div class="main__card gray">
           Выкуп лучших
           автомобилей
@@ -189,14 +191,30 @@
         </div>
       </div>
     </div>
+    <div class="d-flex justify-content-center align-items-center d-md-none"
+         style="background: #fff; padding-top: 25px; padding-bottom: 35px; margin-left: -30px; margin-right: -30px;">
+      <svg width="102" height="16" viewBox="0 0 102 16" onclick="$('.main-bottom-slider').slick('slickPrev');"
+           class="compare__arrow compare__arrow--prev px-2" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M0.293129 7.29288C-0.0973968 7.68341 -0.0973969 8.31657 0.293129 8.7071L6.65709 15.0711C7.04761 15.4616 7.68078 15.4616 8.0713 15.0711C8.46183 14.6805 8.46183 14.0474 8.0713 13.6568L2.41445 7.99999L8.0713 2.34314C8.46183 1.95261 8.46183 1.31945 8.0713 0.928924C7.68078 0.5384 7.04762 0.5384 6.65709 0.928924L0.293129 7.29288ZM101.114 7L1.00024 6.99999L1.00024 8.99999L101.114 9L101.114 7Z"
+          fill="#D05216"/>
+      </svg>
+
+      <svg width="101" height="16" viewBox="0 0 101 16" onclick="$('.main-bottom-slider').slick('slickNext');"
+           class="compare__arrow compare__arrow--next px-2" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M100.707 8.70711C101.098 8.31658 101.098 7.68342 100.707 7.29289L94.3431 0.928932C93.9526 0.538408 93.3195 0.538408 92.9289 0.928932C92.5384 1.31946 92.5384 1.95262 92.9289 2.34315L98.5858 8L92.9289 13.6569C92.5384 14.0474 92.5384 14.6805 92.9289 15.0711C93.3195 15.4616 93.9526 15.4616 94.3431 15.0711L100.707 8.70711ZM0 9H100V7H0V9Z"
+          fill="#D05216"/>
+      </svg>
+    </div>
   </div>
 </section>
 <section id="catalog" class="section section--compare">
   <div class="container">
-    <p class="section__glow">
+    <p class="content-padding section__glow">
       Сравните цены на авто в Украине и авто «под ключ» для наших клиентов
     </p>
-    <h1 class="section__header text-white">
+    <h1 class="content-padding section__header text-white">
       Автомобили, доставленные нашим клиентам.
       Даем гарантию итоговой цены авто в Украине!
     </h1>
@@ -204,7 +222,7 @@
       <div class="col-12 col-md-6 col-lg-4">
         <div class="compare__card">
           <div class="compare__img">
-            <img src="imgs/compare1.jpg" alt="">
+            <img src="./imgs/compare1.jpg" alt="">
             <div class="compare__price">
               <div class="compare__price">
                 Экономия <br> от 2820$
@@ -271,7 +289,7 @@
       <div class="col-12 col-md-6 col-lg-4">
         <div class="compare__card">
           <div class="compare__img">
-            <img src="imgs/compare2.jpg" alt="">
+            <img src="./imgs/compare2.jpg" alt="">
             <div class="compare__price">
               <div class="compare__price">
                 Экономия <br> от 2820$
@@ -338,7 +356,7 @@
       <div class="col-12 col-md-6 col-lg-4">
         <div class="compare__card">
           <div class="compare__img">
-            <img src="imgs/compare3.jpg" alt="">
+            <img src="./imgs/compare3.jpg" alt="">
             <div class="compare__price">
               <div class="compare__price">
                 Экономия <br> от 2820$
@@ -405,7 +423,7 @@
       <div class="col-12 col-md-6 col-lg-4">
         <div class="compare__card">
           <div class="compare__img">
-            <img src="imgs/compare1.jpg" alt="">
+            <img src="./imgs/compare1.jpg" alt="">
             <div class="compare__price">
               <div class="compare__price">
                 Экономия <br> от 2820$
@@ -472,7 +490,7 @@
       <div class="col-12 col-md-6 col-lg-4">
         <div class="compare__card">
           <div class="compare__img">
-            <img src="imgs/compare2.jpg" alt="">
+            <img src="./imgs/compare2.jpg" alt="">
             <div class="compare__price">
               <div class="compare__price">
                 Экономия <br> от 2820$
@@ -539,7 +557,7 @@
       <div class="col-12 col-md-6 col-lg-4">
         <div class="compare__card">
           <div class="compare__img">
-            <img src="imgs/compare3.jpg" alt="">
+            <img src="./imgs/compare3.jpg" alt="">
             <div class="compare__price">
               <div class="compare__price">
                 Экономия <br> от 2820$
@@ -606,7 +624,7 @@
       <div class="col-12 col-md-6 col-lg-4">
         <div class="compare__card">
           <div class="compare__img">
-            <img src="imgs/compare1.jpg" alt="">
+            <img src="./imgs/compare1.jpg" alt="">
             <div class="compare__price">
               <div class="compare__price">
                 Экономия <br> от 2820$
@@ -673,7 +691,7 @@
       <div class="col-12 col-md-6 col-lg-4">
         <div class="compare__card">
           <div class="compare__img">
-            <img src="imgs/compare2.jpg" alt="">
+            <img src="./imgs/compare2.jpg" alt="">
             <div class="compare__price">
               <div class="compare__price">
                 Экономия <br> от 2820$
@@ -740,7 +758,7 @@
       <div class="col-12 col-md-6 col-lg-4">
         <div class="compare__card">
           <div class="compare__img">
-            <img src="imgs/compare3.jpg" alt="">
+            <img src="./imgs/compare3.jpg" alt="">
             <div class="compare__price">
               <div class="compare__price">
                 Экономия <br> от 2820$
@@ -805,8 +823,27 @@
         </div>
       </div>
     </div>
-    <div class="text-center">
-      <a href="javascript: void(0)" class="p2 btn-core btn-orange d-inline-block" onclick="document.querySelector('.compare__container').classList.add('expand'); this.remove();">Показать еще</a>
+    <div class="d-flex justify-content-center align-items-center d-md-none">
+      <svg width="102" height="16" viewBox="0 0 102 16" onclick="$('.compare__container').slick('slickPrev');"
+           class="compare__arrow compare__arrow--prev px-2" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M0.293129 7.29288C-0.0973968 7.68341 -0.0973969 8.31657 0.293129 8.7071L6.65709 15.0711C7.04761 15.4616 7.68078 15.4616 8.0713 15.0711C8.46183 14.6805 8.46183 14.0474 8.0713 13.6568L2.41445 7.99999L8.0713 2.34314C8.46183 1.95261 8.46183 1.31945 8.0713 0.928924C7.68078 0.5384 7.04762 0.5384 6.65709 0.928924L0.293129 7.29288ZM101.114 7L1.00024 6.99999L1.00024 8.99999L101.114 9L101.114 7Z"
+          fill="#D05216"/>
+      </svg>
+
+      <svg width="101" height="16" viewBox="0 0 101 16" onclick="$('.compare__container').slick('slickNext');"
+           class="compare__arrow compare__arrow--next px-2" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M100.707 8.70711C101.098 8.31658 101.098 7.68342 100.707 7.29289L94.3431 0.928932C93.9526 0.538408 93.3195 0.538408 92.9289 0.928932C92.5384 1.31946 92.5384 1.95262 92.9289 2.34315L98.5858 8L92.9289 13.6569C92.5384 14.0474 92.5384 14.6805 92.9289 15.0711C93.3195 15.4616 93.9526 15.4616 94.3431 15.0711L100.707 8.70711ZM0 9H100V7H0V9Z"
+          fill="#D05216"/>
+      </svg>
+    </div>
+
+
+    <div class="text-center d-none d-md-block">
+      <a href="javascript: void(0)" class="p2 btn-core btn-orange d-inline-block"
+         onclick="document.querySelector('.compare__container').classList.add('expand'); this.remove();">Показать
+        еще</a>
     </div>
   </div>
 </section>
@@ -814,10 +851,10 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-8 col-xl-6">
-        <p class="section__glow">
+        <p class="content-padding section__glow">
           Получите прямо сейчас
         </p>
-        <h1 class="section__header mb-0">
+        <h1 class="content-padding section__header mb-0">
           БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ Нашего
           эксперта по подбору автомобилей
         </h1>
@@ -825,10 +862,11 @@
     </div>
     <div class="row mt-5">
       <div class="col-12 col-md-6">
-        <p class="consult__subheader">ВЫ ПОЛУЧИТЕ:</p>
-        <div class="row align-items-center mb-3">
+        <p class="content-padding consult__subheader">ВЫ ПОЛУЧИТЕ:</p>
+        <div class="content-padding row align-items-center mb-3">
           <div class="col-2">
-            <svg width="50" height="69" class="img-fluid" viewBox="0 0 50 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="50" height="69" class="img-fluid" viewBox="0 0 50 69" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M43.0682 15.3284C43.1415 14.7673 43.1794 14.2023 43.1818 13.6364C43.1818 6.10525 37.0766 0 29.5455 0C22.0143 0 15.9091 6.10525 15.9091 13.6364C15.9091 14.0205 15.9318 14.3989 15.9625 14.7727H15.9091C11.423 14.7803 7.61207 18.0567 6.93182 22.4909C2.73267 24.274 0.00426136 28.3925 0 32.9545V54.5454C0.00369318 57.6818 2.54545 60.2236 5.68182 60.2273H17.0455C20.1818 60.2236 22.7236 57.6818 22.7273 54.5454V32.9545C22.7244 32.0376 22.6099 31.1244 22.3864 30.2352C23.4526 29.1578 24.23 27.829 24.6466 26.3716C25.4964 26.6926 26.3761 26.9283 27.2727 27.075V32.9545C27.2764 36.0909 29.8182 38.6327 32.9545 38.6364H34.0909V63.6364C34.0909 63.9378 34.2108 64.2267 34.4239 64.4398L37.833 67.8489C38.2767 68.2925 38.996 68.2925 39.4398 67.8489L42.8489 64.4398C43.0619 64.2267 43.1818 63.9378 43.1818 63.6364V59.0909C43.1818 58.7895 43.0619 58.5006 42.8489 58.2875L41.3795 56.8182L42.8489 55.3489C43.0619 55.1358 43.1818 54.8469 43.1818 54.5454V53.4091C43.1818 53.1077 43.0619 52.8187 42.8489 52.6057L41.3795 51.1364L42.8489 49.667C43.0619 49.454 43.1818 49.1651 43.1818 48.8636V47.7273C43.1818 47.4258 43.0619 47.1369 42.8489 46.9239L41.3795 45.4545L42.8489 43.9852C43.0619 43.7722 43.1818 43.4832 43.1818 43.1818V38.6364H44.3182C47.4545 38.6327 49.9963 36.0909 50 32.9545V25C49.9929 20.6263 47.2077 16.7403 43.0682 15.3284ZM7.95455 31.25C7.95639 30.552 8.21761 29.8797 8.6875 29.3636C9.4517 30.3683 10.4155 31.204 11.5182 31.8182H7.95455V31.25ZM10.8466 28.4148V28.4091C11.9916 28.4312 13.0112 29.1386 13.433 30.2034C12.4435 29.8165 11.558 29.204 10.8466 28.4148ZM20.4545 54.5454C20.4545 56.4283 18.9283 57.9545 17.0455 57.9545H5.68182C3.79901 57.9545 2.27273 56.4283 2.27273 54.5454V32.9545C2.27599 29.6749 4.0456 26.6511 6.90341 25.042C7.0044 25.8375 7.21108 26.616 7.51818 27.3568C6.36009 28.3187 5.68764 29.7445 5.68182 31.25V32.9545C5.68182 33.5821 6.19062 34.0909 6.81818 34.0909H14.7727C15.4003 34.0909 15.9091 33.5821 15.9091 32.9545V30.6818C15.8898 30.6818 15.8705 30.6818 15.8511 30.6818C15.5845 27.9195 13.129 25.8962 10.3666 26.1629C10.0912 26.1895 9.81847 26.2388 9.55114 26.3102C9.28693 25.6233 9.13651 24.8979 9.10568 24.1625C13.9432 22.8953 18.8919 25.7896 20.1591 30.6271C20.3581 31.3868 20.4574 32.1692 20.4545 32.9545V54.5454ZM22.5557 25.3602C22.3615 26.2355 21.9949 27.0633 21.4773 27.7955C19.2391 23.3382 14.3334 20.8866 9.425 21.7727C10.3342 18.9588 12.952 17.0504 15.9091 17.0455C16.058 17.0455 16.2045 17.058 16.3511 17.0682C17.2365 20.5469 19.4697 23.5304 22.558 25.3602H22.5557ZM18.9455 17.7693C20.8726 18.7321 22.2322 20.548 22.6136 22.6682C20.9626 21.4045 19.6932 19.7092 18.9455 17.7693ZM27.2841 24.7727C26.4963 24.6146 25.7276 24.3732 24.9909 24.0523C24.9909 23.9898 25 23.9284 25 23.8659C24.9928 19.7649 22.2429 16.1757 18.2852 15.1011C18.2196 14.6156 18.1851 14.1263 18.1818 13.6364C18.1818 7.36037 23.2695 2.27273 29.5455 2.27273C35.8214 2.27273 40.9091 7.36037 40.9091 13.6364C40.9016 14.0342 40.8727 14.4314 40.8227 14.8261C40.4739 14.7905 40.1234 14.7727 39.7727 14.7727H37.5C31.9453 14.7817 27.4118 19.2196 27.2841 24.7727ZM42.0455 22.7273C42.0455 23.3548 41.5366 23.8636 40.9091 23.8636H38.5591C39.3234 23.1847 40.0095 22.4223 40.6045 21.5909H40.9091C41.5366 21.5909 42.0455 22.0997 42.0455 22.7273ZM40.9091 42.7114L38.9693 44.6511C38.5257 45.0949 38.5257 45.8142 38.9693 46.2579L40.9091 48.1977V48.3932L38.9693 50.3329C38.5257 50.7767 38.5257 51.496 38.9693 51.9398L40.9091 53.8795V54.075L38.9693 56.0148C38.5257 56.4585 38.5257 57.1778 38.9693 57.6216L40.9091 59.5614V63.1659L38.6364 65.4386L36.3636 63.1659V38.6364H40.9091V42.7114ZM47.7273 32.9545C47.7273 34.8374 46.201 36.3636 44.3182 36.3636H32.9545C31.0717 36.3636 29.5455 34.8374 29.5455 32.9545V25C29.5504 20.6089 33.1089 17.0504 37.5 17.0455H39.7727C39.9705 17.0455 40.1648 17.0614 40.358 17.075C40.1048 17.857 39.7676 18.6089 39.3523 19.3182H36.3636C34.4847 19.3189 32.9619 20.8428 32.9628 22.7219C32.9634 24.1428 33.8469 25.4136 35.1784 25.9091L35.2341 26.0307C35.2773 26.0102 35.3182 25.9864 35.3614 25.9659C35.6848 26.0737 36.0227 26.1312 36.3636 26.1364H40.9091C42.7868 26.141 44.3129 24.6227 44.3176 22.7449C44.3214 21.2266 43.318 19.8898 41.8591 19.4693C42.1516 18.8564 42.3977 18.2224 42.5955 17.5727C45.6801 18.7456 47.7213 21.6999 47.7273 25V32.9545ZM37.6136 21.5909C36.9597 22.2611 36.2249 22.8474 35.4261 23.3364C35.301 23.1575 35.2318 22.9455 35.2273 22.7273C35.2273 22.0997 35.7361 21.5909 36.3636 21.5909H37.6136Z"
                 fill="black"/>
@@ -842,9 +880,10 @@
             авто из США
           </div>
         </div>
-        <div class="row align-items-center">
+        <div class="content-padding row align-items-center">
           <div class="col-2">
-            <svg width="56" height="56" class="img-fluid" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="56" height="56" class="img-fluid" viewBox="0 0 56 56" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M28 0C12.5361 0 0 12.5361 0 28C0 43.4639 12.5361 56 28 56C43.4639 56 56 43.4639 56 28C55.9825 12.5433 43.4567 0.0175 28 0ZM28 54.1333C13.5669 54.1333 1.86667 42.4331 1.86667 28C1.86667 13.5669 13.5669 1.86667 28 1.86667C42.4331 1.86667 54.1333 13.5669 54.1333 28C54.1169 42.4262 42.4262 54.1169 28 54.1333Z"
                 fill="black"/>
@@ -891,11 +930,15 @@
             подписании договора до 31.10.2020
           </div>
         </div>
-        <a href="#" class="p2 btn-core btn-orange mt-5">Получить консультацию</a>
+        <div class="content-padding">
+          <a href="" class="p2 btn-core btn-orange mt-5" data-toggle="modal" data-target="#callback__modal">Получить
+            консультацию</a>
+        </div>
+
       </div>
       <div class="col-md-6 d-none d-md-block">
         <div class="consult__image">
-          <img src="imgs/consult.jpg" alt="">
+          <img src="./imgs/consult.jpg" alt="">
         </div>
       </div>
     </div>
@@ -919,65 +962,74 @@
         <div class="position-relative text-center">
           <div class="stages__text">
             <p class="consult__subheader text-white">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</p>
-            Менеджер ответит на все ваши вопросы о покупке авто из США, расскажет об особенностях процесса и ценообразовании авто из США.
+            Менеджер ответит на все ваши вопросы о покупке авто из США, расскажет об особенностях процесса и
+            ценообразовании авто из США.
           </div>
-          <img src="imgs/stages_placeholder.jpg" alt="">
+          <img src="./imgs/stages_placeholder.jpg" alt="">
         </div>
         <div class="position-relative text-center">
           <div class="stages__text">
             <p class="consult__subheader text-white">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</p>
-            Менеджер ответит на все ваши вопросы о покупке авто из США, расскажет об особенностях процесса и ценообразовании авто из США.
+            Менеджер ответит на все ваши вопросы о покупке авто из США, расскажет об особенностях процесса и
+            ценообразовании авто из США.
           </div>
-          <img src="imgs/stages_placeholder.jpg" alt="">
+          <img src="./imgs/stages_placeholder.jpg" alt="">
         </div>
         <div class="position-relative text-center">
           <div class="stages__text">
             <p class="consult__subheader text-white">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</p>
-            Менеджер ответит на все ваши вопросы о покупке авто из США, расскажет об особенностях процесса и ценообразовании авто из США.
+            Менеджер ответит на все ваши вопросы о покупке авто из США, расскажет об особенностях процесса и
+            ценообразовании авто из США.
           </div>
-          <img src="imgs/stages_placeholder.jpg" alt="">
+          <img src="./imgs/stages_placeholder.jpg" alt="">
         </div>
         <div class="position-relative text-center">
           <div class="stages__text">
             <p class="consult__subheader text-white">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</p>
-            Менеджер ответит на все ваши вопросы о покупке авто из США, расскажет об особенностях процесса и ценообразовании авто из США.
+            Менеджер ответит на все ваши вопросы о покупке авто из США, расскажет об особенностях процесса и
+            ценообразовании авто из США.
           </div>
-          <img src="imgs/stages_placeholder.jpg" alt="">
+          <img src="./imgs/stages_placeholder.jpg" alt="">
         </div>
         <div class="position-relative text-center">
           <div class="stages__text">
             <p class="consult__subheader text-white">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</p>
-            Менеджер ответит на все ваши вопросы о покупке авто из США, расскажет об особенностях процесса и ценообразовании авто из США.
+            Менеджер ответит на все ваши вопросы о покупке авто из США, расскажет об особенностях процесса и
+            ценообразовании авто из США.
           </div>
-          <img src="imgs/stages_placeholder.jpg" alt="">
+          <img src="./imgs/stages_placeholder.jpg" alt="">
         </div>
         <div class="position-relative text-center">
           <div class="stages__text">
             <p class="consult__subheader text-white">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</p>
-            Менеджер ответит на все ваши вопросы о покупке авто из США, расскажет об особенностях процесса и ценообразовании авто из США.
+            Менеджер ответит на все ваши вопросы о покупке авто из США, расскажет об особенностях процесса и
+            ценообразовании авто из США.
           </div>
-          <img src="imgs/stages_placeholder.jpg" alt="">
+          <img src="./imgs/stages_placeholder.jpg" alt="">
         </div>
         <div class="position-relative text-center">
           <div class="stages__text">
             <p class="consult__subheader text-white">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</p>
-            Менеджер ответит на все ваши вопросы о покупке авто из США, расскажет об особенностях процесса и ценообразовании авто из США.
+            Менеджер ответит на все ваши вопросы о покупке авто из США, расскажет об особенностях процесса и
+            ценообразовании авто из США.
           </div>
-          <img src="imgs/stages_placeholder.jpg" alt="">
+          <img src="./imgs/stages_placeholder.jpg" alt="">
         </div>
         <div class="position-relative text-center">
           <div class="stages__text">
             <p class="consult__subheader text-white">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</p>
-            Менеджер ответит на все ваши вопросы о покупке авто из США, расскажет об особенностях процесса и ценообразовании авто из США.
+            Менеджер ответит на все ваши вопросы о покупке авто из США, расскажет об особенностях процесса и
+            ценообразовании авто из США.
           </div>
-          <img src="imgs/stages_placeholder.jpg" alt="">
+          <img src="./imgs/stages_placeholder.jpg" alt="">
         </div>
         <div class="position-relative text-center">
           <div class="stages__text">
             <p class="consult__subheader text-white">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</p>
-            Менеджер ответит на все ваши вопросы о покупке авто из США, расскажет об особенностях процесса и ценообразовании авто из США.
+            Менеджер ответит на все ваши вопросы о покупке авто из США, расскажет об особенностях процесса и
+            ценообразовании авто из США.
           </div>
-          <img src="imgs/stages_placeholder.jpg" alt="">
+          <img src="./imgs/stages_placeholder.jpg" alt="">
         </div>
       </div>
       <div class="slick-arrow slick-next" onclick="$('.stages--one').slick('slickNext');">
@@ -1031,88 +1083,122 @@
   </div>
 </section>
 <section id="reviews" class="section section--reviews">
-<div class="container">
-  <p class="section__glow">
-    Отзывы
-  </p>
-  <h1 class="section__header">
-    Довольные клиенты, которые<br>
-    уже получили свои авто
-  </h1>
-  <div class="row my-5">
-    <div class="col-1 d-none d-xl-block"></div>
-    <div class="col-md-8 col-xl-5">
-      <div class="reviews mb-5">
-        <div class="review">
-            <div class="d-flex">
-              <p class="text-white" style="font-weight: 600;">Максим Иванович</p>
-              <div class="d-flex ml-auto" style="margin-right: 5px;">
-                <img src="imgs/star-full.svg" alt="">
-                <img src="imgs/star-full.svg" alt="">
-                <img src="imgs/star-full.svg" alt="">
-                <img src="imgs/star-full.svg" alt="">
-                <img src="imgs/star-full.svg" alt="">
+  <div class="container">
+    <p class="content-padding section__glow">
+      Отзывы
+    </p>
+    <h1 class="content-padding section__header">
+      Довольные клиенты, которые<br>
+      уже получили свои авто
+    </h1>
+    <div class="content-padding d-block my-5">
+      <div class="reviews-slider">
+        <div class="">
+          <div class="review-slide">
+            <div class="review">
+              <div class="d-flex">
+                <p class="text-white" style="font-weight: 600;">Максим Иванович</p>
+                <div class="d-flex ml-auto" style="margin-right: 5px;">
+                  <img src="./imgs/star-full.svg" alt="">
+                  <img src="./imgs/star-full.svg" alt="">
+                  <img src="./imgs/star-full.svg" alt="">
+                  <img src="./imgs/star-full.svg" alt="">
+                  <img src="./imgs/star-full.svg" alt="">
+                </div>
               </div>
+              <p class="text-white">Клиент</p>
+              <p class="review__content mt-4 text-white">
+                По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у
+                некоторых людей недоумение.
+                По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает.По
+                своей
+                сути
+                рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у
+                некоторых людей недоумение.
+              </p>
             </div>
-          <p>Клиент</p>
-          <p class="review__content mt-4 text-white">
-            По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у
-            некоторых людей недоумение.
-            По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает.По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у
-            некоторых людей недоумение.
-          </p>
-        </div>
-        <div class="review">
-          <div class="d-flex">
-            <p class="text-white" style="font-weight: 600;">Максим Иванович</p>
-            <div class="d-flex ml-auto" style="margin-right: 5px;">
-              <img src="imgs/star-full.svg" alt="">
-              <img src="imgs/star-full.svg" alt="">
-              <img src="imgs/star-full.svg" alt="">
-              <img src="imgs/star-full.svg" alt="">
-              <img src="imgs/star-full.svg" alt="">
+            <div class="review-photo">
+              <img src="./imgs/review_image.jpg" alt="" class="mt-5 mt-md-0 mx-auto">
             </div>
           </div>
-          <p>Клиент</p>
-          <p class="review__content mt-4 text-white">
-            По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у
-            некоторых людей недоумение.
-            По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает.По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у
-            некоторых людей недоумение.
-          </p>
         </div>
-        <div class="review">
-          <div class="d-flex">
-            <p class="text-white" style="font-weight: 600;">Максим Иванович</p>
-            <div class="d-flex ml-auto" style="margin-right: 5px;">
-              <img src="imgs/star-full.svg" alt="">
-              <img src="imgs/star-full.svg" alt="">
-              <img src="imgs/star-full.svg" alt="">
-              <img src="imgs/star-full.svg" alt="">
-              <img src="imgs/star-full.svg" alt="">
+        <div class="">
+          <div class="review-slide">
+            <div class="review">
+              <div class="d-flex">
+                <p class="text-white" style="font-weight: 600;">Максим Иванович</p>
+                <div class="d-flex ml-auto" style="margin-right: 5px;">
+                  <img src="./imgs/star-full.svg" alt="">
+                  <img src="./imgs/star-full.svg" alt="">
+                  <img src="./imgs/star-full.svg" alt="">
+                  <img src="./imgs/star-full.svg" alt="">
+                  <img src="./imgs/star-full.svg" alt="">
+                </div>
+              </div>
+              <p>Клиент</p>
+              <p class="review__content mt-4 text-white">
+                По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у
+                некоторых людей недоумение.
+                По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает.По
+                своей
+                сути
+                рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у
+                некоторых людей недоумение.
+              </p>
+            </div>
+            <div class="review-photo">
+              <img src="./imgs/review_image.jpg" alt="" class="mt-5 mt-md-0 mx-auto">
             </div>
           </div>
-          <p>Клиент</p>
-          <p class="review__content mt-4 text-white">
-            По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у
-            некоторых людей недоумение.
-            По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает.По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у
-            некоторых людей недоумение.
-          </p>
         </div>
-      </div>
-      <div class="d-flex justify-content-center align-items-center">
-        <div class="slick-arrow slick-prev" onclick="$('.reviews').slick('slickPrev');"></div>
-        <div class="slick-arrow slick-next" onclick="$('.reviews').slick('slickNext');"></div>
+        <div class="">
+          <div class="review-slide">
+            <div class="review">
+              <div class="d-flex">
+                <p class="text-white" style="font-weight: 600;">Максим Иванович</p>
+                <div class="d-flex ml-auto" style="margin-right: 5px;">
+                  <img src="./imgs/star-full.svg" alt="">
+                  <img src="./imgs/star-full.svg" alt="">
+                  <img src="./imgs/star-full.svg" alt="">
+                  <img src="./imgs/star-full.svg" alt="">
+                  <img src="./imgs/star-full.svg" alt="">
+                </div>
+              </div>
+              <p>Клиент</p>
+              <p class="review__content mt-4 text-white">
+                По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у
+                некоторых людей недоумение.
+                По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает.По
+                своей
+                сути
+                рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у
+                некоторых людей недоумение.
+              </p>
+            </div>
+            <div class="review-photo">
+              <img src="./imgs/review_image.jpg" alt="" class="mt-5 mt-md-0 mx-auto">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="col-1 px-0 d-none d-xl-block"></div>
-    <div class="col-md-4 col-lg-auto text-center">
-      <img src="imgs/review_image.jpg" alt="" class="mt-5 mt-md-0 mx-auto">
+    <div class="d-flex justify-content-center align-items-center reviews-control">
+      <svg width="102" height="16" viewBox="0 0 102 16" onclick="$('.reviews-slider').slick('slickPrev');"
+           class="compare__arrow compare__arrow--prev px-2 pr-md-4" fill="none"
+           xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M0.293129 7.29288C-0.0973968 7.68341 -0.0973969 8.31657 0.293129 8.7071L6.65709 15.0711C7.04761 15.4616 7.68078 15.4616 8.0713 15.0711C8.46183 14.6805 8.46183 14.0474 8.0713 13.6568L2.41445 7.99999L8.0713 2.34314C8.46183 1.95261 8.46183 1.31945 8.0713 0.928924C7.68078 0.5384 7.04762 0.5384 6.65709 0.928924L0.293129 7.29288ZM101.114 7L1.00024 6.99999L1.00024 8.99999L101.114 9L101.114 7Z"
+          fill="#D05216"></path>
+      </svg>
+      <svg width="101" height="16" viewBox="0 0 101 16" onclick="$('.reviews-slider').slick('slickNext');"
+           class="compare__arrow compare__arrow--next px-2 pl-md-4" fill="none"
+           xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M100.707 8.70711C101.098 8.31658 101.098 7.68342 100.707 7.29289L94.3431 0.928932C93.9526 0.538408 93.3195 0.538408 92.9289 0.928932C92.5384 1.31946 92.5384 1.95262 92.9289 2.34315L98.5858 8L92.9289 13.6569C92.5384 14.0474 92.5384 14.6805 92.9289 15.0711C93.3195 15.4616 93.9526 15.4616 94.3431 15.0711L100.707 8.70711ZM0 9H100V7H0V9Z"
+          fill="#D05216"></path>
+      </svg>
     </div>
   </div>
-
-</div>
 </section>
 <section id="car-selection" class="car-selection">
   <div class="container">
@@ -1144,16 +1230,19 @@
           <p class="p1 mb-30">Как вам удобно получить ответ?</p>
           <div class="form-row select-messenger">
             <div class="form-check form-check-inline">
-              <input autocomplete="off" class="form-check-input" type="checkbox" id="car-selection__сall" value="ЗВОНОК">
-              <label class="p1 form-check-label" for="car-selection__сall">ЗВОНОК</label>
+              <input autocomplete="off" class="form-check-input" type="checkbox" id="car-selection__сall"
+                     value="ЗВОНОК">
+              <label class="p1 form-check-label" for="car-selection__сall" class="p1">ЗВОНОК</label>
             </div>
             <div class="form-check form-check-inline">
-              <input autocomplete="off" class="form-check-input" type="checkbox" id="car-selection__viber" value="VIBER">
-              <label class="p1 form-check-label" for="car-selection__viber">VIBER</label>
+              <input autocomplete="off" class="form-check-input" type="checkbox" id="car-selection__viber"
+                     value="VIBER">
+              <label class="p1 form-check-label" for="car-selection__viber" class="p1">VIBER</label>
             </div>
             <div class="form-check form-check-inline">
-              <input autocomplete="off" class="form-check-input" type="checkbox" id="car-selection__telegram" value="TELEGRAM">
-              <label class="p1 form-check-label" for="car-selection__telegram">TELEGRAM</label>
+              <input autocomplete="off" class="form-check-input" type="checkbox" id="car-selection__telegram"
+                     value="TELEGRAM">
+              <label class="p1 form-check-label" for="car-selection__telegram" class="p1">TELEGRAM</label>
             </div>
           </div>
           <div class="form-row">
@@ -1167,19 +1256,19 @@
           <div class="form-row flex-column">
             <label class="p1" for="comment">Бюджет</label>
             <div class="input__wrapper border-bottom-none money-select">
-              <span class="irs irs--flat js-irs-0"><span class="irs"><span class="irs-line" tabindex="0"></span><span class="irs-min" style="display: none; visibility: visible;">0</span><span class="irs-max" style="display: none; visibility: visible;">1</span><span class="irs-from" style="visibility: visible; left: 34.8125%;">400</span><span class="irs-to" style="visibility: visible; left: 52.1458%;">600</span><span class="irs-single" style="visibility: hidden; left: 36.1979%;">400 — 600</span></span><span class="irs-grid"></span><span class="irs-bar" style="cursor: ew-resize; left: 41.3333%; width: 17.3333%;"></span><span class="irs-shadow shadow-from" style="display: none;"></span><span class="irs-shadow shadow-to" style="display: none;"></span><span class="irs-handle from" style="left: 34.6667%;"><i></i><i></i><i></i></span><span class="irs-handle to type_last" style="left: 52%;"><i></i><i></i><i></i></span></span><input autocomplete="off" type="text" class="budget p1 border-bottom-none irs-hidden-input" name="budget" value="" tabindex="-1" readonly="">
+              <input autocomplete="off" type="text" class="budget p1 border-bottom-none" name="budget" value=""/>
             </div>
           </div>
           <div class="form-row flex-column">
             <label class="p1" for="comment">Год</label>
             <div class="input__wrapper border-bottom-none">
-              <span class="irs irs--flat js-irs-2"><span class="irs"><span class="irs-line" tabindex="0"></span><span class="irs-min" style="display: none; visibility: visible;">0</span><span class="irs-max" style="display: none; visibility: visible;">1</span><span class="irs-from" style="visibility: visible; left: 43.4792%;">2010</span><span class="irs-to" style="visibility: visible; left: 69.4792%;">2016</span><span class="irs-single" style="visibility: hidden; left: 47.9844%;">2010 — 2016</span></span><span class="irs-grid"></span><span class="irs-bar" style="cursor: ew-resize; left: 50%; width: 26%;"></span><span class="irs-shadow shadow-from" style="display: none;"></span><span class="irs-shadow shadow-to" style="display: none;"></span><span class="irs-handle from" style="left: 43.3333%;"><i></i><i></i><i></i></span><span class="irs-handle to type_last" style="left: 69.3333%;"><i></i><i></i><i></i></span></span><input autocomplete="off" type="text" class="year p1 border-bottom-none irs-hidden-input" name="year" value="" tabindex="-1" readonly="">
+              <input autocomplete="off" type="text" class="year p1 border-bottom-none" name="year" value=""/>
             </div>
           </div>
           <div class="form-row flex-column">
             <div class="input__wrapper">
               <select name="brand" id="brand" class="p1">
-                <option selected="" disabled="" value="0">Марка авто</option>
+                <option selected disabled value="0">Марка авто</option>
                 <option value="1">1</option>
                 <option value="2">1</option>
                 <option value="3">1</option>
@@ -1189,7 +1278,7 @@
           <div class="form-row flex-column">
             <div class="input__wrapper">
               <select name="brand" id="brand" class="p1">
-                <option selected="" disabled="" value="0">Модель</option>
+                <option selected disabled value="0">Модель</option>
                 <option value="1">1</option>
                 <option value="2">1</option>
                 <option value="3">1</option>
@@ -1205,27 +1294,35 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-6">
-        <p class="section__glow">
+        <p class="content-padding section__glow">
           Гарантии
         </p>
-        <h1 class="section__header">
+        <h1 class="content-padding section__header">
           Даем гарантии, которые не могут
           себе позволить 95% компаний
         </h1>
       </div>
     </div>
     <div class="mt-5 row">
-      <div class="col-12 col-md-6 col-lg-4">
-        <img src="imgs/official_docs.jpg" alt="" class="mb-4 pb-2 img-fluid">
-        <p>Мы надежный подрядчик и все условия, порядок и размер платежей мы с вами прописываем в договоре в двух
+      <div class="col-12 col-md-4">
+        <img src="./imgs/official_docs.jpg" alt="" class="mb-4 pb-2 img-fluid">
+        <p class="d-none d-md-block">Мы надежный подрядчик и все условия, порядок и размер платежей мы с вами
+          прописываем в договоре в двух
           экземплярах</p>
       </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <img src="imgs/safe_canto.jpg" alt="" class="mb-4 pb-2 img-fluid">
-        <img src="imgs/fix_price.jpg" alt="" class="img-fluid">
+      <div class="d-md-block row col-12 col-md-4 warranty-double-image">
+        <div class="col-6 col-md-12">
+          <img src="./imgs/safe_canto.jpg" alt="" class="mb-4 pb-2 img-fluid">
+        </div>
+        <div class="col-6 col-md-12">
+          <img src="./imgs/fix_price.jpg" alt="" class="img-fluid">
+        </div>
       </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <p class="mb-5">Даем гарантию сохранности вашего автомобиля во время транспортировки. Мы получаем фотоотчет
+      <div class="col-12 col-md-4">
+        <p class="d-md-none">Мы надежный подрядчик и все условия, порядок и размер платежей мы с вами прописываем в
+          договоре в двух
+          экземплярах</p>
+        <p class="mb-3 mb-lg-5">Даем гарантию сохранности вашего автомобиля во время транспортировки. Мы получаем фотоотчет
           состояния авто перед отправкой с США и по прибытии в Украину.
           Чтобы убезопасить ваше авто, можно заключить дополнительно страховый договор.</p>
         <p>Перед выкупом авто делаем детальный расчет всех расходов, для получения авто в Одессе.
@@ -1238,18 +1335,18 @@
 <section class="section section--ad">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-6 ad-section__text">
+      <div class="col-12 col-md-8 ad-section__text">
         <p class="section__glow">
           Гарантии
         </p>
         <h1 class="section__header text-white">
           К нашему мнению прислушиваются
-          ведущие СМИ в Украине <img src="imgs/inter.png" alt="" class="inter mt-1 float-right ml-3">
+          ведущие СМИ в Украине <img src="./imgs/inter.png" alt="" class="inter mt-1 float-right ml-3">
         </h1>
       </div>
-      <div class="col-12 col-md-6 col-lg-4 ml-auto">
-        <a href="#">
-          <img src="imgs/review.jpg" alt="" class="img-fluid">
+      <div class="col-12 col-md-4 ml-auto">
+        <a style="max-width: 100%;" href="https://www.youtube.com/c/IMPORTCARSua">
+          <iframe style="max-width: 100%;" src="https://www.youtube.com/embed/wqf2L84qJiY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </a>
       </div>
     </div>
@@ -1258,41 +1355,57 @@
 <section class="section section--videos">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-6 ad-section__text">
-        <p class="section__glow">
+      <div class="col-12 col-md-8 col-lg-6 ad-section__text">
+        <p class="content-padding section__glow">
           Youtube
         </p>
-        <h1 class="section__header">
+        <h1 class="content-padding section__header">
           Смотрите реальные видео-отзывы
           наших клиентов
         </h1>
       </div>
       <div class="col-12 col-md-auto ml-auto d-flex">
-        <a href="#" class="p2 btn-core btn-orange mt-auto ml-auto">Смотреть все</a>
+        <a href="https://www.youtube.com/c/IMPORTCARSua/" target="_blank" class="p2 btn-core btn-orange mt-auto ml-auto">Смотреть все</a>
       </div>
     </div>
     <div class="videos__container row">
-      <div class="col-12 col-md-6 col-xl-4">
-        <a href="#"><img src="imgs/review.jpg" alt="" class="img-fluid"></a>
+      <div class="col-12 col-sm-6 col-md-4 col-xl-4">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/f3xZlPdSPr0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-      <div class="col-12 col-md-6 col-xl-4">
-        <a href="#"><img src="imgs/review.jpg" alt="" class="img-fluid"></a>
+      <div class="col-12 col-sm-6 col-md-4 col-xl-4">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/wqf2L84qJiY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-      <div class="col-12 col-md-6 col-xl-4">
-        <a href="#"><img src="imgs/review.jpg" alt="" class="img-fluid"></a>
+      <div class="col-12 col-sm-6 col-md-4 col-xl-4">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3eMtSXVLR_k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-      <div class="col-12 col-md-6 col-xl-4">
-        <a href="#"><img src="imgs/review.jpg" alt="" class="img-fluid"></a>
+      <div class="col-12 col-sm-6 col-md-4 col-xl-4">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/I0V4-aWjc5w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-      <div class="col-12 col-md-6 col-xl-4">
-        <a href="#"><img src="imgs/review.jpg" alt="" class="img-fluid"></a>
+      <div class="col-12 col-sm-6 col-md-4 col-xl-4">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ASfm_-e8v9Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-      <div class="col-12 col-md-6 col-xl-4">
-        <a href="#"><img src="imgs/review.jpg" alt="" class="img-fluid"></a>
+      <div class="col-12 col-sm-6 col-md-4 col-xl-4">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/eC80Xu5DTb0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
-    <div class="text-center">
-      <a href="#" class="p2 btn-core btn-orange d-inline-block">Получить консультацию</a>
+    <div class="d-flex justify-content-center align-items-center d-md-none">
+      <svg width="102" height="16" viewBox="0 0 102 16" onclick="$('.videos__container').slick('slickPrev');"
+           class="compare__arrow compare__arrow--prev px-2 pr-md-4" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M0.293129 7.29288C-0.0973968 7.68341 -0.0973969 8.31657 0.293129 8.7071L6.65709 15.0711C7.04761 15.4616 7.68078 15.4616 8.0713 15.0711C8.46183 14.6805 8.46183 14.0474 8.0713 13.6568L2.41445 7.99999L8.0713 2.34314C8.46183 1.95261 8.46183 1.31945 8.0713 0.928924C7.68078 0.5384 7.04762 0.5384 6.65709 0.928924L0.293129 7.29288ZM101.114 7L1.00024 6.99999L1.00024 8.99999L101.114 9L101.114 7Z"
+          fill="#D05216"></path>
+      </svg>
+
+      <svg width="101" height="16" viewBox="0 0 101 16" onclick="$('.videos__container').slick('slickNext');"
+           class="compare__arrow compare__arrow--next px-2 pl-md-4" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M100.707 8.70711C101.098 8.31658 101.098 7.68342 100.707 7.29289L94.3431 0.928932C93.9526 0.538408 93.3195 0.538408 92.9289 0.928932C92.5384 1.31946 92.5384 1.95262 92.9289 2.34315L98.5858 8L92.9289 13.6569C92.5384 14.0474 92.5384 14.6805 92.9289 15.0711C93.3195 15.4616 93.9526 15.4616 94.3431 15.0711L100.707 8.70711ZM0 9H100V7H0V9Z"
+          fill="#D05216"></path>
+      </svg>
+    </div>
+    <div class="text-center mt-5">
+      <a href="#" class="p2 btn-core btn-orange d-inline-block" data-toggle="modal" data-target="#callback__modal">Получить
+        консультацию</a>
     </div>
   </div>
 </section>
@@ -1312,33 +1425,42 @@
         <div class="position-relative text-center">
           <div class="stages__text">
             <p class="consult__subheader text-white">Услуга "под ключ"</p>
-            Ведем и контролируем весь процесс от выкупа авто до ремонта "под ключ" и постановки авто на украинский учёт. Поддержка экспертов компании на каждом этапе работы. Минимизируем вашу вовлеченность в рутину.
+            Ведем и контролируем весь процесс от выкупа авто до ремонта "под ключ" и постановки авто на украинский учёт.
+            Поддержка экспертов компании на каждом этапе работы. Минимизируем вашу вовлеченность в рутину.
           </div>
-          <img src="imgs/stages_placeholder.jpg" alt="">
+          <img src="./imgs/stages_placeholder.jpg" alt="">
         </div>
         <div class="position-relative text-center">
           <div class="stages__text">
             <p class="consult__subheader text-white">Точная оценка стоимости</p>
-Ведем и контролируем весь процесс от выкупа авто до ремонта "под ключ" и постановки авто на украинский учёт. Поддержка экспертов компании на каждом этапе работы. Минимизируем вашу вовлеченность в рутину.          </div>
-          <img src="imgs/stages_placeholder.jpg" alt="">
+            Ведем и контролируем весь процесс от выкупа авто до ремонта "под ключ" и постановки авто на украинский учёт.
+            Поддержка экспертов компании на каждом этапе работы. Минимизируем вашу вовлеченность в рутину.
+          </div>
+          <img src="./imgs/stages_placeholder.jpg" alt="">
         </div>
         <div class="position-relative text-center">
           <div class="stages__text">
             <p class="consult__subheader text-white">Детальная проверка авто</p>
-Ведем и контролируем весь процесс от выкупа авто до ремонта "под ключ" и постановки авто на украинский учёт. Поддержка экспертов компании на каждом этапе работы. Минимизируем вашу вовлеченность в рутину.          </div>
-          <img src="imgs/stages_placeholder.jpg" alt="">
+            Ведем и контролируем весь процесс от выкупа авто до ремонта "под ключ" и постановки авто на украинский учёт.
+            Поддержка экспертов компании на каждом этапе работы. Минимизируем вашу вовлеченность в рутину.
+          </div>
+          <img src="./imgs/stages_placeholder.jpg" alt="">
         </div>
         <div class="position-relative text-center">
           <div class="stages__text">
             <p class="consult__subheader text-white">Собственное СТО</p>
-Ведем и контролируем весь процесс от выкупа авто до ремонта "под ключ" и постановки авто на украинский учёт. Поддержка экспертов компании на каждом этапе работы. Минимизируем вашу вовлеченность в рутину.          </div>
-          <img src="imgs/stages_placeholder.jpg" alt="">
+            Ведем и контролируем весь процесс от выкупа авто до ремонта "под ключ" и постановки авто на украинский учёт.
+            Поддержка экспертов компании на каждом этапе работы. Минимизируем вашу вовлеченность в рутину.
+          </div>
+          <img src="./imgs/stages_placeholder.jpg" alt="">
         </div>
         <div class="position-relative text-center">
           <div class="stages__text">
             <p class="consult__subheader text-white">Проф. отдел подбора</p>
-Ведем и контролируем весь процесс от выкупа авто до ремонта "под ключ" и постановки авто на украинский учёт. Поддержка экспертов компании на каждом этапе работы. Минимизируем вашу вовлеченность в рутину.          </div>
-          <img src="imgs/stages_placeholder.jpg" alt="">
+            Ведем и контролируем весь процесс от выкупа авто до ремонта "под ключ" и постановки авто на украинский учёт.
+            Поддержка экспертов компании на каждом этапе работы. Минимизируем вашу вовлеченность в рутину.
+          </div>
+          <img src="./imgs/stages_placeholder.jpg" alt="">
         </div>
       </div>
       <div class="slick-arrow slick-next" onclick="$('.stages--two').slick('slickNext');">
@@ -1379,26 +1501,28 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-6">
-        <p class="section__glow">
+        <p class="content-padding section__glow">
           О нас
         </p>
-        <h1 class="section__header">
+        <h1 class="content-padding section__header">
           Мы уже более 6 лет занимаемся
           доставкой авто для наших клиентов
         </h1>
       </div>
     </div>
     <div class="mt-5 row">
-      <div class="col-12 col-md-6">
+      <div class="content-padding col-12 col-md-6">
         <p>Оказываем премиальное качество услуг для всех клиентов.
           <br><br>
-          С 2013 года компания Importcars доставляет автомобили из США, Европы, ОАЭ и Кореи "под ключ" от подбора авто до таможенной очистки, сертификации ЕВРО 5 и постановки на учет в Полиции Украины, получая до 50% выгоды для наших клиентов
+          С 2013 года компания Importcars доставляет автомобили из США, Европы, ОАЭ и Кореи "под ключ" от подбора авто
+          до таможенной очистки, сертификации ЕВРО 5 и постановки на учет в Полиции Украины, получая до 50% выгоды для
+          наших клиентов
         </p>
         <div class="row mb-5 mt-4 pt-3">
           <div class="col-6">
-              <p class="orange-box__new-price">
-                500&nbsp;000
-              </p>
+            <p class="orange-box__new-price">
+              500&nbsp;000
+            </p>
             <p class="text-uppercase text--small">ПРОСМОТРОВ НА ЮТУБЕ</p>
           </div>
           <div class="col-6">
@@ -1424,14 +1548,21 @@
         </div>
       </div>
       <div class="col-12 col-md-6 mt-5 mt-md-0">
-        <img src="imgs/voronin.jpg" alt="" class="mb-4 pb-2 img-fluid">
-        <div class="d-flex align-items-center">
-          <svg width="20" height="20" style="margin-right: 20px;" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M17.0703 0H2.92969C1.31439 0 0 1.31439 0 2.92969V17.0703C0 18.6855 1.31439 20 2.92969 20H17.0703C18.6855 20 20 18.6855 20 17.0703V2.92969C20 1.31439 18.6855 0 17.0703 0ZM10.0391 15.2344C7.1312 15.2344 4.76563 12.8688 4.76563 9.96094C4.76563 7.05308 7.1312 4.68751 10.0391 4.68751C12.9469 4.68751 15.3125 7.05308 15.3125 9.96094C15.3125 12.8688 12.9469 15.2344 10.0391 15.2344ZM15.8985 5.85937C14.9292 5.85937 14.1406 5.0708 14.1406 4.10157C14.1406 3.13232 14.9292 2.34375 15.8985 2.34375C16.8677 2.34375 17.6563 3.13232 17.6563 4.10157C17.6563 5.0708 16.8677 5.85937 15.8985 5.85937Z" fill="#979797"/>
+        <img src="./imgs/voronin.jpg" alt="" class="mb-4 pb-2 img-fluid">
+        <div class="d-flex align-items-center justify-content-between justify-content-md-start">
+          <svg width="20" height="20" class="mr-md-3" viewBox="0 0 20 20" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M17.0703 0H2.92969C1.31439 0 0 1.31439 0 2.92969V17.0703C0 18.6855 1.31439 20 2.92969 20H17.0703C18.6855 20 20 18.6855 20 17.0703V2.92969C20 1.31439 18.6855 0 17.0703 0ZM10.0391 15.2344C7.1312 15.2344 4.76563 12.8688 4.76563 9.96094C4.76563 7.05308 7.1312 4.68751 10.0391 4.68751C12.9469 4.68751 15.3125 7.05308 15.3125 9.96094C15.3125 12.8688 12.9469 15.2344 10.0391 15.2344ZM15.8985 5.85937C14.9292 5.85937 14.1406 5.0708 14.1406 4.10157C14.1406 3.13232 14.9292 2.34375 15.8985 2.34375C16.8677 2.34375 17.6563 3.13232 17.6563 4.10157C17.6563 5.0708 16.8677 5.85937 15.8985 5.85937Z"
+              fill="#979797"/>
           </svg>
-          <a href="#" style="font-size: 12px; font-weight: 700; text-transform: uppercase; color: #000;">Алексей Воронин</a>
+          <a class="text--small" href="#"
+             style="font-weight: 700; text-transform: uppercase; color: #000; white-space: nowrap">Алексей Воронин</a>
+          <div class="about__divider d-md-none"></div>
           <div class="top-nav__divider mx-4 d-none d-md-inline-block"></div>
-          <p style="font-size: 12px; font-weight: 700; text-transform: uppercase; color: #D05216; line-height: 1.25 !important;">УЧРЕДИТЕЛЬ КОМПАНИИ<br>«IMPORTCARS»</p>
+          <p class="text--small"
+             style="font-weight: 700; text-transform: uppercase; color: #D05216; line-height: 1.25 !important;">
+            УЧРЕДИТЕЛЬ КОМПАНИИ<br>«IMPORTCARS»</p>
         </div>
       </div>
     </div>
@@ -1439,24 +1570,25 @@
 </section>
 <section id="team" class="section section--team">
   <div class="container">
-      <p class="section__glow">
-        Наша команда
-      </p>
-      <h1 class="section__header text-white">
-        Команда Importcars - наша гордость
-      </h1>
-      <div class="row">
-        <div class="col-lg-7">
-          <p class="team__subtext text-white">
-            Опыт работы сорудников 7-10 лет в сфере автосервиса. В отделе подбора работают специалисты, которые имеют техническое образование и владеют английским языком, что помогает выбирать и выкупать лучшие авто
-          </p>
-        </div>
+    <p class="content-padding section__glow">
+      Наша команда
+    </p>
+    <h1 class="content-padding section__header text-white">
+      Команда Importcars - наша гордость
+    </h1>
+    <div class="row">
+      <div class="col-lg-7">
+        <p class="content-padding team__subtext text-white">
+          Опыт работы сорудников 7-10 лет в сфере автосервиса. В отделе подбора работают специалисты, которые имеют
+          техническое образование и владеют английским языком, что помогает выбирать и выкупать лучшие авто
+        </p>
+      </div>
     </div>
     <div class="position-relative my-5">
       <div class="team">
         <div class="position-relative text-center">
           <div class="team__image">
-            <img src="imgs/team/1.jpg" alt="">
+            <img src="./imgs/team/1.jpg" alt="">
           </div>
           <div class="team__text text-white">
             <p class="font-weight-bold text-uppercase" style="margin-bottom: 10px;">Алексей Воронин</p>
@@ -1465,7 +1597,7 @@
         </div>
         <div class="position-relative text-center">
           <div class="team__image">
-            <img src="imgs/team/2.jpg" alt="">
+            <img src="./imgs/team/2.jpg" alt="">
           </div>
           <div class="team__text text-white">
             <p class="font-weight-bold text-uppercase" style="margin-bottom: 10px;">Александр Гуляев</p>
@@ -1474,7 +1606,7 @@
         </div>
         <div class="position-relative text-center">
           <div class="team__image">
-            <img src="imgs/team/3.jpg" alt="">
+            <img src="./imgs/team/3.jpg" alt="">
           </div>
           <div class="team__text text-white">
             <p class="font-weight-bold text-uppercase" style="margin-bottom: 10px;">Татьяна Ларионова</p>
@@ -1483,7 +1615,7 @@
         </div>
         <div class="position-relative text-center">
           <div class="team__image">
-            <img src="imgs/team/4.jpg" alt="">
+            <img src="./imgs/team/4.jpg" alt="">
           </div>
           <div class="team__text text-white">
             <p class="font-weight-bold text-uppercase" style="margin-bottom: 10px;">Александр Галащук</p>
@@ -1492,7 +1624,7 @@
         </div>
         <div class="position-relative text-center">
           <div class="team__image">
-            <img src="imgs/team/1.jpg" alt="">
+            <img src="./imgs/team/1.jpg" alt="">
           </div>
           <div class="team__text text-white">
             <p class="font-weight-bold text-uppercase" style="margin-bottom: 10px;">Алексей Воронин</p>
@@ -1501,7 +1633,7 @@
         </div>
         <div class="position-relative text-center">
           <div class="team__image">
-            <img src="imgs/team/2.jpg" alt="">
+            <img src="./imgs/team/2.jpg" alt="">
           </div>
           <div class="team__text text-white">
             <p class="font-weight-bold text-uppercase" style="margin-bottom: 10px;">Александр Гуляев</p>
@@ -1510,7 +1642,7 @@
         </div>
         <div class="position-relative text-center">
           <div class="team__image">
-            <img src="imgs/team/3.jpg" alt="">
+            <img src="./imgs/team/3.jpg" alt="">
           </div>
           <div class="team__text text-white">
             <p class="font-weight-bold text-uppercase" style="margin-bottom: 10px;">Татьяна Ларионова</p>
@@ -1519,7 +1651,7 @@
         </div>
         <div class="position-relative text-center">
           <div class="team__image">
-            <img src="imgs/team/4.jpg" alt="">
+            <img src="./imgs/team/4.jpg" alt="">
           </div>
           <div class="team__text text-white">
             <p class="font-weight-bold text-uppercase" style="margin-bottom: 10px;">Александр Галащук</p>
@@ -1527,9 +1659,20 @@
           </div>
         </div>
       </div>
-      <div class="d-flex justify-content-center align-items-center">
-        <div class="slick-arrow slick-prev" onclick="$('.team').slick('slickPrev');"></div>
-        <div class="slick-arrow slick-next" onclick="$('.team').slick('slickNext');"></div>
+      <div class="d-flex justify-content-center align-items-center mt-4">
+        <svg width="102" height="16" viewBox="0 0 102 16" onclick="$('.team').slick('slickPrev');"
+             class="compare__arrow compare__arrow--prev px-2 pr-md-4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M0.293129 7.29288C-0.0973968 7.68341 -0.0973969 8.31657 0.293129 8.7071L6.65709 15.0711C7.04761 15.4616 7.68078 15.4616 8.0713 15.0711C8.46183 14.6805 8.46183 14.0474 8.0713 13.6568L2.41445 7.99999L8.0713 2.34314C8.46183 1.95261 8.46183 1.31945 8.0713 0.928924C7.68078 0.5384 7.04762 0.5384 6.65709 0.928924L0.293129 7.29288ZM101.114 7L1.00024 6.99999L1.00024 8.99999L101.114 9L101.114 7Z"
+            fill="#D05216"></path>
+        </svg>
+
+        <svg width="101" height="16" viewBox="0 0 101 16" onclick="$('.team').slick('slickNext');"
+             class="compare__arrow compare__arrow--next px-2 pl-md-4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M100.707 8.70711C101.098 8.31658 101.098 7.68342 100.707 7.29289L94.3431 0.928932C93.9526 0.538408 93.3195 0.538408 92.9289 0.928932C92.5384 1.31946 92.5384 1.95262 92.9289 2.34315L98.5858 8L92.9289 13.6569C92.5384 14.0474 92.5384 14.6805 92.9289 15.0711C93.3195 15.4616 93.9526 15.4616 94.3431 15.0711L100.707 8.70711ZM0 9H100V7H0V9Z"
+            fill="#D05216"></path>
+        </svg>
       </div>
     </div>
   </div>
@@ -1544,6 +1687,7 @@
         Закажите подбор прямо сейчас и получите<br>
         5-10 вариантов авто в течении 10 минут
       </h1>
+      <!--      <p class="consult__subheader text-white text-center mb-4">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</p>-->
     </div>
     <div class="row">
       <form class="form">
@@ -1555,24 +1699,27 @@
             </div>
           </div>
           <div class="form-row">
-            <label class="p1" for="comment--two">Ваш номер телефона*</label>
+            <label class="p1" for="phone--two">Ваш номер телефона*</label>
             <div class="input__wrapper">
-              <input autocomplete="off" type="text" class="form-control p1" id="comment--two" name="phone" placeholder="">
+              <input autocomplete="off" type="text" class="form-control p1" id="phone--two" name="phone" placeholder="">
             </div>
           </div>
           <p class="p1 mb-30">Как вам удобно получить ответ?</p>
           <div class="form-row select-messenger">
             <div class="form-check form-check-inline">
-              <input autocomplete="off" class="form-check-input" type="checkbox" id="car-selection__сall--two" value="ЗВОНОК">
-              <label class="p1 form-check-label" for="car-selection__сall--two">ЗВОНОК</label>
+              <input autocomplete="off" class="form-check-input" type="checkbox" id="car-selection__сall--two"
+                     value="ЗВОНОК">
+              <label class="p1 form-check-label" for="car-selection__сall--two" class="p1">ЗВОНОК</label>
             </div>
             <div class="form-check form-check-inline">
-              <input autocomplete="off" class="form-check-input" type="checkbox" id="car-selection__viber--two" value="VIBER">
-              <label class="p1 form-check-label" for="car-selection__viber--two">VIBER</label>
+              <input autocomplete="off" class="form-check-input" type="checkbox" id="car-selection__viber--two"
+                     value="VIBER">
+              <label class="p1 form-check-label" for="car-selection__viber--two" class="p1">VIBER</label>
             </div>
             <div class="form-check form-check-inline">
-              <input autocomplete="off" class="form-check-input" type="checkbox" id="car-selection__telegram--two" value="TELEGRAM">
-              <label class="p1 form-check-label" for="car-selection__telegram--two">TELEGRAM</label>
+              <input autocomplete="off" class="form-check-input" type="checkbox" id="car-selection__telegram--two"
+                     value="TELEGRAM">
+              <label class="p1 form-check-label" for="car-selection__telegram--two" class="p1">TELEGRAM</label>
             </div>
           </div>
           <div class="form-row">
@@ -1586,19 +1733,19 @@
           <div class="form-row flex-column">
             <label class="p1" for="comment">Бюджет</label>
             <div class="input__wrapper border-bottom-none money-select">
-              <span class="irs irs--flat js-irs-0"><span class="irs"><span class="irs-line" tabindex="0"></span><span class="irs-min" style="display: none; visibility: visible;">0</span><span class="irs-max" style="display: none; visibility: visible;">1</span><span class="irs-from" style="visibility: visible; left: 34.8125%;">400</span><span class="irs-to" style="visibility: visible; left: 52.1458%;">600</span><span class="irs-single" style="visibility: hidden; left: 36.1979%;">400 — 600</span></span><span class="irs-grid"></span><span class="irs-bar" style="cursor: ew-resize; left: 41.3333%; width: 17.3333%;"></span><span class="irs-shadow shadow-from" style="display: none;"></span><span class="irs-shadow shadow-to" style="display: none;"></span><span class="irs-handle from" style="left: 34.6667%;"><i></i><i></i><i></i></span><span class="irs-handle to type_last" style="left: 52%;"><i></i><i></i><i></i></span></span><input autocomplete="off" type="text" class="budget p1 border-bottom-none irs-hidden-input" name="budget" value="" tabindex="-1" readonly="">
+              <input autocomplete="off" type="text" class="budget--two p1 border-bottom-none" name="budget" value=""/>
             </div>
           </div>
           <div class="form-row flex-column">
             <label class="p1" for="comment">Год</label>
             <div class="input__wrapper border-bottom-none">
-              <span class="irs irs--flat js-irs-2"><span class="irs"><span class="irs-line" tabindex="0"></span><span class="irs-min" style="display: none; visibility: visible;">0</span><span class="irs-max" style="display: none; visibility: visible;">1</span><span class="irs-from" style="visibility: visible; left: 43.4792%;">2010</span><span class="irs-to" style="visibility: visible; left: 69.4792%;">2016</span><span class="irs-single" style="visibility: hidden; left: 47.9844%;">2010 — 2016</span></span><span class="irs-grid"></span><span class="irs-bar" style="cursor: ew-resize; left: 50%; width: 26%;"></span><span class="irs-shadow shadow-from" style="display: none;"></span><span class="irs-shadow shadow-to" style="display: none;"></span><span class="irs-handle from" style="left: 43.3333%;"><i></i><i></i><i></i></span><span class="irs-handle to type_last" style="left: 69.3333%;"><i></i><i></i><i></i></span></span><input autocomplete="off" type="text" class="year p1 border-bottom-none irs-hidden-input" name="year" value="" tabindex="-1" readonly="">
+              <input autocomplete="off" type="text" class="year--two p1 border-bottom-none" name="year" value=""/>
             </div>
           </div>
           <div class="form-row flex-column">
             <div class="input__wrapper">
               <select name="brand" id="brand" class="p1">
-                <option selected="" disabled="" value="0">Марка авто</option>
+                <option selected disabled value="0">Марка авто</option>
                 <option value="1">1</option>
                 <option value="2">1</option>
                 <option value="3">1</option>
@@ -1608,7 +1755,7 @@
           <div class="form-row flex-column">
             <div class="input__wrapper">
               <select name="brand" id="brand" class="p1">
-                <option selected="" disabled="" value="0">Модель</option>
+                <option selected disabled value="0">Модель</option>
                 <option value="1">1</option>
                 <option value="2">1</option>
                 <option value="3">1</option>
@@ -1623,7 +1770,7 @@
 <section class="section section--faq">
   <div class="container">
     <div class="row">
-      <div class="col-12">
+      <div class="content-padding col-12">
         <p class="section__glow">
           Что спрашивают клиенты
         </p>
@@ -1632,57 +1779,84 @@
         </h1>
         <div class="faq-container">
           <div class="faq-block">
-            <p class="faq-control" onclick="this.closest('.faq-block').classList.toggle('expand')">Какой срок доставки Авто?</p>
+            <p class="faq-control" onclick="this.closest('.faq-block').classList.toggle('expand')">Какой срок доставки
+              Авто?</p>
             <div class="faq-content">
-              Средний срок доставки авто составляет около 3 месяцев. В зависимости от запроса на подбор авто и выбранного логистического пути (обычная доставка в Одессу или ускоренная через Германию / Литву) этот срок может корректироваться как в большую так и в меньшую сторону.
+              Средний срок доставки авто составляет около 3 месяцев. В зависимости от запроса на подбор авто и
+              выбранного логистического пути (обычная доставка в Одессу или ускоренная через Германию / Литву) этот срок
+              может корректироваться как в большую так и в меньшую сторону.
             </div>
           </div>
           <div class="faq-block">
-            <p class="faq-control" onclick="this.closest('.faq-block').classList.toggle('expand')">Есть ли машины в наличии?</p>
+            <p class="faq-control" onclick="this.closest('.faq-block').classList.toggle('expand')">Есть ли машины в
+              наличии?</p>
             <div class="faq-content">
-              Средний срок доставки авто составляет около 3 месяцев. В зависимости от запроса на подбор авто и выбранного логистического пути (обычная доставка в Одессу или ускоренная через Германию / Литву) этот срок может корректироваться как в большую так и в меньшую сторону.
+              Средний срок доставки авто составляет около 3 месяцев. В зависимости от запроса на подбор авто и
+              выбранного логистического пути (обычная доставка в Одессу или ускоренная через Германию / Литву) этот срок
+              может корректироваться как в большую так и в меньшую сторону.
             </div>
           </div>
           <div class="faq-block">
-            <p class="faq-control" onclick="this.closest('.faq-block').classList.toggle('expand')">Предоставляете ли вы кредит?</p>
+            <p class="faq-control" onclick="this.closest('.faq-block').classList.toggle('expand')">Предоставляете ли вы
+              кредит?</p>
             <div class="faq-content">
-              Средний срок доставки авто составляет около 3 месяцев. В зависимости от запроса на подбор авто и выбранного логистического пути (обычная доставка в Одессу или ускоренная через Германию / Литву) этот срок может корректироваться как в большую так и в меньшую сторону.
+              Средний срок доставки авто составляет около 3 месяцев. В зависимости от запроса на подбор авто и
+              выбранного логистического пути (обычная доставка в Одессу или ускоренная через Германию / Литву) этот срок
+              может корректироваться как в большую так и в меньшую сторону.
             </div>
           </div>
           <div class="faq-block">
-            <p class="faq-control" onclick="this.closest('.faq-block').classList.toggle('expand')">Что входит в стоимость ваших услуг (990$)?</p>
+            <p class="faq-control" onclick="this.closest('.faq-block').classList.toggle('expand')">Что входит в
+              стоимость ваших услуг (990$)?</p>
             <div class="faq-content">
-              Средний срок доставки авто составляет около 3 месяцев. В зависимости от запроса на подбор авто и выбранного логистического пути (обычная доставка в Одессу или ускоренная через Германию / Литву) этот срок может корректироваться как в большую так и в меньшую сторону.
+              Средний срок доставки авто составляет около 3 месяцев. В зависимости от запроса на подбор авто и
+              выбранного логистического пути (обычная доставка в Одессу или ускоренная через Германию / Литву) этот срок
+              может корректироваться как в большую так и в меньшую сторону.
             </div>
           </div>
           <div class="faq-block">
-            <p class="faq-control" onclick="this.closest('.faq-block').classList.toggle('expand')">Где вы берете запчасти на ремонт? Запчасти б/у или оригинал?</p>
+            <p class="faq-control" onclick="this.closest('.faq-block').classList.toggle('expand')">Где вы берете
+              запчасти на ремонт? Запчасти б/у или оригинал?</p>
             <div class="faq-content">
-              Средний срок доставки авто составляет около 3 месяцев. В зависимости от запроса на подбор авто и выбранного логистического пути (обычная доставка в Одессу или ускоренная через Германию / Литву) этот срок может корректироваться как в большую так и в меньшую сторону.
+              Средний срок доставки авто составляет около 3 месяцев. В зависимости от запроса на подбор авто и
+              выбранного логистического пути (обычная доставка в Одессу или ускоренная через Германию / Литву) этот срок
+              может корректироваться как в большую так и в меньшую сторону.
             </div>
           </div>
           <div class="faq-block">
-            <p class="faq-control" onclick="this.closest('.faq-block').classList.toggle('expand')">Вы делаете ремонт?</p>
+            <p class="faq-control" onclick="this.closest('.faq-block').classList.toggle('expand')">Вы делаете
+              ремонт?</p>
             <div class="faq-content">
-              Средний срок доставки авто составляет около 3 месяцев. В зависимости от запроса на подбор авто и выбранного логистического пути (обычная доставка в Одессу или ускоренная через Германию / Литву) этот срок может корректироваться как в большую так и в меньшую сторону.
+              Средний срок доставки авто составляет около 3 месяцев. В зависимости от запроса на подбор авто и
+              выбранного логистического пути (обычная доставка в Одессу или ускоренная через Германию / Литву) этот срок
+              может корректироваться как в большую так и в меньшую сторону.
             </div>
           </div>
           <div class="faq-block">
-            <p class="faq-control" onclick="this.closest('.faq-block').classList.toggle('expand')">А куда ехать за машиной после прибытия в Украину?</p>
+            <p class="faq-control" onclick="this.closest('.faq-block').classList.toggle('expand')">А куда ехать за
+              машиной после прибытия в Украину?</p>
             <div class="faq-content">
-              Средний срок доставки авто составляет около 3 месяцев. В зависимости от запроса на подбор авто и выбранного логистического пути (обычная доставка в Одессу или ускоренная через Германию / Литву) этот срок может корректироваться как в большую так и в меньшую сторону.
+              Средний срок доставки авто составляет около 3 месяцев. В зависимости от запроса на подбор авто и
+              выбранного логистического пути (обычная доставка в Одессу или ускоренная через Германию / Литву) этот срок
+              может корректироваться как в большую так и в меньшую сторону.
             </div>
           </div>
           <div class="faq-block">
-            <p class="faq-control" onclick="this.closest('.faq-block').classList.toggle('expand')">Сколько будет стоить ремонт, когда машину привезут?</p>
+            <p class="faq-control" onclick="this.closest('.faq-block').classList.toggle('expand')">Сколько будет стоить
+              ремонт, когда машину привезут?</p>
             <div class="faq-content">
-              Средний срок доставки авто составляет около 3 месяцев. В зависимости от запроса на подбор авто и выбранного логистического пути (обычная доставка в Одессу или ускоренная через Германию / Литву) этот срок может корректироваться как в большую так и в меньшую сторону.
+              Средний срок доставки авто составляет около 3 месяцев. В зависимости от запроса на подбор авто и
+              выбранного логистического пути (обычная доставка в Одессу или ускоренная через Германию / Литву) этот срок
+              может корректироваться как в большую так и в меньшую сторону.
             </div>
           </div>
           <div class="faq-block">
-            <p class="faq-control" onclick="this.closest('.faq-block').classList.toggle('expand')">Сколько времени займёт ремонт, после прибытия автомобиля?</p>
+            <p class="faq-control" onclick="this.closest('.faq-block').classList.toggle('expand')">Сколько времени
+              займёт ремонт, после прибытия автомобиля?</p>
             <div class="faq-content">
-              Средний срок доставки авто составляет около 3 месяцев. В зависимости от запроса на подбор авто и выбранного логистического пути (обычная доставка в Одессу или ускоренная через Германию / Литву) этот срок может корректироваться как в большую так и в меньшую сторону.
+              Средний срок доставки авто составляет около 3 месяцев. В зависимости от запроса на подбор авто и
+              выбранного логистического пути (обычная доставка в Одессу или ускоренная через Германию / Литву) этот срок
+              может корректироваться как в большую так и в меньшую сторону.
             </div>
           </div>
         </div>
@@ -1691,37 +1865,71 @@
   </div>
 </section>
 <section id="contacts" class="section section--contacts pb-0">
-<div class="container">
-  <div class="row">
-    <div class="col-12 col-lg-10 mx-auto">
-      <p class="section__glow text-center">
-        Наши контакты
-      </p>
-      <h1 class="section__header text-center">
-        Приезжайте к нам на кофе в офис
-      </h1>
-      <div class="row">
-        <div class="col-12 col-md-6 col-lg-3 mb-3">
-          <p style="font-weight: 700;">Киев</p>
-          <p style="font-weight: 500;">+38 (067) 474-63-73</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-10 mx-auto">
+        <p class="section__glow text-center">
+          Наши контакты
+        </p>
+        <h1 class="section__header text-center">
+          Приезжайте к нам на кофе в офис
+        </h1>
+        <div class="row text-left">
+          <div class="col-6 col-md-3 col-lg-3 mb-3 px-0">
+            <p class="contact-item__text" style="font-weight: 700;">Киев</p>
+            <p class="contact-item__text" style="font-weight: 500;">+38 (067) 474-63-73</p>
+          </div>
+          <div class="col-6 col-md-3 col-lg-3 mb-3 px-0">
+            <p class="contact-item__text" style="font-weight: 700;">Харьков</p>
+            <p class="contact-item__text" style="font-weight: 500;">+38 (067) 474-63-73</p>
+          </div>
+          <div class="col-6 col-md-3 col-lg-3 mb-3 px-0">
+            <p class="contact-item__text" style="font-weight: 700;">Одесса</p>
+            <p class="contact-item__text" style="font-weight: 500;">+38 (067) 474-63-73</p>
+          </div>
+          <div class="col-6 col-md-3 col-lg-3 mb-3 px-0">
+            <p class="contact-item__text" style="font-weight: 700;">Днепр</p>
+            <p class="contact-item__text" style="font-weight: 500;">+38 (067) 474-63-73</p>
+          </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-3 mb-3">
-          <p style="font-weight: 700;">Харьков</p>
-          <p style="font-weight: 500;">+38 (067) 474-63-73</p>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3 mb-3">
-          <p style="font-weight: 700;">Одесса</p>
-          <p style="font-weight: 500;">+38 (067) 474-63-73</p>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3 mb-3">
-          <p style="font-weight: 700;">Днепр</p>
-          <p style="font-weight: 500;">+38 (067) 474-63-73</p>
+        <img class="contacts_image d-none d-md-block" src="./imgs/contacts_image.svg" alt="">
+        <img class="contacts_image d-md-none" src="./imgs/map_mob.svg" alt="">
+        <div class="row d-md-none text-left">
+          <div class="col-6">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="10" height="10" fill="#D05216"/>
+            </svg>
+            <p class="contact-mob-text">г. Киев, ул. Васильковская,
+              14а, этаж 3А, офис 313А</p>
+          </div>
+          <div class="col-6">
+            <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="10" height="10.5711" fill="#1A1B1B"/>
+            </svg>
+            <p class="contact-mob-text">г. Харьков, Бизнес центр
+              Протон" ПлощадьВ
+              осстания, 7/8, корпус
+              Б-10 1 этаж Офис 1.03</p>
+          </div>
+          <div class="col-6">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="10" height="10" fill="#A34115"/>
+            </svg>
+            <p class="contact-mob-text">г. Одесса, улица. Большая
+              Арнаутская, 19, БЦ - Ривьера,
+              офис 103</p>
+          </div>
+          <div class="col-6">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="10" height="10" fill="#003082"/>
+            </svg>
+            <p class="contact-mob-text">г. Днепр, ул. Яворницкого 22,
+              БЦ Атриум, 6 этаж, офис 2609</p>
+          </div>
         </div>
       </div>
-      <img class="contacts_image" src="imgs/contacts_image.svg" alt="">
     </div>
   </div>
-</div>
 </section>
 <section class="section section--seo faq">
   <div class="container">
@@ -1845,22 +2053,221 @@
   </div>
 </footer>
 
+<div class="modal fade" id="callback__modal__done" tabindex="-1" aria-labelledby="callback__modal__doneLabel"
+     aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M10.5026 8.9349C10.416 8.84834 10.416 8.70796 10.5026 8.6214L13.9512 5.17284L12.3836 3.60531L8.93507 7.05387C8.84851 7.14044 8.70813 7.14044 8.62157 7.05387L5.17301 3.60531L3.60548 5.17284L7.05404 8.6214C7.14061 8.70796 7.14061 8.84834 7.05404 8.9349L3.60548 12.3835L5.17301 13.951L8.62157 10.5024C8.70813 10.4159 8.84851 10.4159 8.93507 10.5024L12.3836 13.951L13.9512 12.3835L10.5026 8.9349Z"
+            fill="#D05216"/>
+        </svg>
+      </button>
+
+      <div class="modal-head mb-60">
+        <div class="moving-lines">
+          <img src="./imgs/svg/vertLine.svg" alt="">
+          <img src="./imgs/svg/vertLine.svg" alt="">
+        </div>
+        <h3 class="h3 uppercase color-white">
+                    <span>
+                        ДАННЫЕ
+                    </span>
+          <span class="mon-bold">
+                        ОТПРАВЛЕНЫ!
+                    </span>
+        </h3>
+      </div>
+      <div class="content-block">
+        <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.4131 0L12 1.58698L4.57656 9.01042L0 4.43397L1.58693 2.84699L4.57656 5.83651L10.4131 0Z"
+                fill="#D05216"/>
+        </svg>
+        <div class="text">
+          <p class="p2 mon-bold color-white uppercase mb-10">ЗАЯВКА УСПЕШНО ПРИНЯТА!</p>
+          <p class="p2 color-white uppercase mb-20">НАШИ МЕНЕДЖЕРЫ СВЯЖУТСЯ С ВАМИ В БЛИЖАЙШЕЕ ВРЕМЯ!</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="callback__modal" tabindex="-1" aria-labelledby="callback__modalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-head mb-30">
+        <div class="moving-lines">
+          <img src="./imgs/svg/vertLine.svg" alt="">
+          <img src="./imgs/svg/vertLine.svg" alt="">
+        </div>
+        <h3 class="h3 uppercase color-white">
+                                <span>
+                                    ЗАКАЗАТЬ
+                                </span>
+          <span class="mon-bold">
+                                    ЗВОНОК
+                                </span>
+        </h3>
+      </div>
+      <form class="form" id="callback__modal__form">
+        <div class="form-group mb-40">
+          <div class="input__wrapper w-250 mr-100">
+            <label class="p1" for="user_name">Введите ваше имя</label>
+            <input autocomplete="off" type="text" class="form-control p1" id="user_name" name="user_name"
+                   placeholder="">
+          </div>
+        </div>
+        <div class="form-group mb-40">
+          <div class="input__wrapper w-250 mr-100">
+            <label class="p1" for="phone">Ваш номер телефона</label>
+            <input autocomplete="off" type="text" class="form-control p1" id="phone" name="phone" placeholder="">
+          </div>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn-core btn-orange">
+            <img src="./imgs/svg/racing.svg" alt="send">
+            ОТПРАВИТЬ
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="test__modal" tabindex="-1" aria-labelledby="test__modalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-head mb-30">
+        <div class="moving-lines">
+          <img src="./imgs/svg/vertLine.svg" alt="">
+          <img src="./imgs/svg/vertLine.svg" alt="">
+        </div>
+        <h3 class="h3 uppercase color-white">
+                                <span>
+                                    ПРОЙДИ ТЕСТ
+                                </span>
+          <span class="mon-bold">
+                                    И ПОЛУЧИ ПОДАРОК
+                                </span>
+        </h3>
+      </div>
+      <p class="p2 color-white mb-30 item_description active" id="test__modal__description-1">
+        Ответьте на 5 вопросов и получите точный просчет вашего авто и один из двух подарков от нашей компании!
+      </p>
+      <p class="p2 color-white mb-30 item_description" id="test__modal__description-2">
+        Заполните контактную форму и наш менеджер свяжется
+        с вами и предложит 5-10 вариантов авто под ваши пожелания.
+      </p>
+      <form class="form" id="test__modal__form">
+        <div class="form-row flex-column mb-40 item active" id="test__modal__form_1">
+          <div class="input__wrapper">
+            <select name="brand" id="brand" class="p1" required>
+              <option selected disabled value="">Какой тип кузова вы рассматриваете?</option>
+              <option value="1">1</option>
+              <option value="2">1</option>
+              <option value="3">1</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group mb-40 item" id="test__modal__form_2">
+          <div class="input__wrapper w-100 mr-100">
+            <label class="p1" for="car_brand">Какую марку авто вы ищете?</label>
+            <input autocomplete="off" type="text" class="form-control p1" id="car_brand" name="car_brand"
+                   placeholder="">
+          </div>
+        </div>
+        <div class="form-group mb-40 item" id="test__modal__form_3">
+          <label class="p1" for="user_name">В каком бюджете вы хотите купить авто?</label>
+          <div class="input__wrapper border-bottom-none money-select">
+            <input autocomplete="off" type="text" class="budget p1 border-bottom-none" name="budget" value=""/>
+          </div>
+        </div>
+        <div class="form-group mb-40 item" id="test__modal__form_4">
+          <label class="p1" for="user_name">Какого года авто вы ищете?</label>
+          <div class="input__wrapper border-bottom-none">
+            <input autocomplete="off" type="text" class="year p1 border-bottom-none" name="year" value=""/>
+          </div>
+        </div>
+        <div class="form-row item" id="test__modal__form_5">
+          <div class="form-check form-check-inline">
+            <input autocomplete="off" class="form-check-input" type="checkbox" id="discount450" value="discount450">
+            <label class="p1 form-check-label" for="discount450" class="p1">450$ скидки на доставку авто из США</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input autocomplete="off" class="form-check-input" type="checkbox" id="free_detailing"
+                   value="free_detailing">
+            <label class="p1 form-check-label" for="free_detailing" class="p1">Бесплатный детейлинг авто из США
+              (ценность: 475$)</label>
+          </div>
+        </div>
+        <div class="item" id="test__modal__form_6">
+          <div class="form-group mb-40">
+            <div class="input__wrapper w-100 mr-100">
+              <label class="p1" for="user_name">Введите ваше имя</label>
+              <input autocomplete="off" type="text" class="form-control p1" id="user_name" name="user_name"
+                     placeholder="">
+            </div>
+          </div>
+          <div class="form-group mb-40">
+            <div class="input__wrapper w-100 mr-100">
+              <label class="p1" for="user_name">Ваш номер телефона</label>
+              <input autocomplete="off" type="text" class="form-control p1" id="user_name" name="user_name"
+                     placeholder="">
+            </div>
+          </div>
+        </div>
+        <div class="form-group stages--block d-flex justify-content-between align-items-end">
+          <div class="stages--block__indicator d-flex align-items-end">
+            <div class="number p1">
+              <span class="current">01 </span>/ 05
+            </div>
+            <div class="underscores">
+              <svg width="20" height="3" viewBox="0 0 20 3">
+                <rect width="20" id="step-indicator-1" height="3" fill="#D05216"/>
+              </svg>
+              <svg width="20" height="3" viewBox="0 0 20 3">
+                <rect width="20" id="step-indicator-2" height="3" fill="#252525"/>
+              </svg>
+              <svg width="20" height="3" viewBox="0 0 20 3">
+                <rect width="20" id="step-indicator-3" height="3" fill="#252525"/>
+              </svg>
+              <svg width="20" height="3" viewBox="0 0 20 3">
+                <rect width="20" id="step-indicator-4" height="3" fill="#252525"/>
+              </svg>
+              <svg width="20" height="3" viewBox="0 0 20 3">
+                <rect width="20" id="step-indicator-5" height="3" fill="#252525"/>
+              </svg>
 
 
+            </div>
+
+          </div>
+          <button id="test_button" data-step="2" type="submit" class="btn-core btn-orange">
+            <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M17.4747 6.53335L17.4756 6.53432C17.508 6.57016 17.5092 6.6288 17.4747 6.66714L12.0779 12.6636C12.0539 12.6888 12.0253 12.6993 12.0003 12.6993H8.40045C8.36193 12.6993 8.32543 12.6766 8.30846 12.6387L8.30804 12.6377C8.29311 12.6045 8.29828 12.5624 8.32606 12.5314C8.32607 12.5314 8.32608 12.5314 8.3261 12.5314L13.3642 6.93415L13.6653 6.59968L13.3643 6.26518L8.32573 0.666281L8.32573 0.66628L8.32496 0.665422C8.30094 0.63886 8.29238 0.597433 8.30873 0.558863C8.32576 0.522559 8.36202 0.5 8.40045 0.5H12.0003C12.0274 0.5 12.0541 0.510767 12.0757 0.534487C12.0758 0.534601 12.0759 0.534715 12.076 0.534829L17.4747 6.53335Z"
+                stroke="white"/>
+              <path
+                d="M9.67488 6.53335L9.67576 6.53432C9.70819 6.57016 9.70939 6.6288 9.67488 6.66714L4.27807 12.6636C4.25413 12.6888 4.2255 12.6993 4.20045 12.6993H0.600642C0.562121 12.6993 0.525629 12.6766 0.508657 12.6387L0.508233 12.6377C0.493301 12.6045 0.498475 12.5624 0.526251 12.5314C0.526264 12.5314 0.526277 12.5314 0.526291 12.5314L5.56442 6.93415L5.86548 6.59968L5.56446 6.26518L0.525929 0.666281L0.52593 0.66628L0.525155 0.665422C0.50114 0.63886 0.49258 0.597433 0.508922 0.558862C0.525958 0.522558 0.562215 0.5 0.600642 0.5H4.20045C4.2276 0.5 4.25427 0.510769 4.27591 0.534492C4.27602 0.534604 4.27612 0.534716 4.27622 0.534829L9.67488 6.53335Z"
+                stroke="white"/>
+            </svg>
+            Далее
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
 
 
-
-
-
-
-
-
-
-<script src="js/vendor/modernizr-3.11.2.min.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/ion.rangeSlider.js"></script>
-<script type="text/javascript" src="js/slick.js"></script>
-<script src="js/main.js"></script>
+<!--<script src="./js/jquery.js"></script>-->
+<script src="./js/jquery.maskedinput.min.js"></script>
+<script src="./js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="./js/plugins.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/ion.rangeSlider.js"></script>
+<script type="text/javascript" src="./js/slick.js"></script>
+<script src="./js/main.js"></script>
 
 </body>
 
