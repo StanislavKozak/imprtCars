@@ -68,7 +68,7 @@ header .top {
 
 .sticky header{
   top: 0;
-  transition: 0.25s;
+  //transition: 0.25s;
 }
 .sticky .top {
   padding-top: 20px !important;
