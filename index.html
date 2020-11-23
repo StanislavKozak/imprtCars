@@ -29,26 +29,6 @@
 
 <body>
 <script src="./js/jquery.js"></script>
-<nav class="top-nav__menu">
-  <div class="container top-nav__container">
-    <div class="row align-items-center topnav__cities">
-      <a href="#contacts">Киев</a>
-      <a href="#contacts">Харьков</a>
-      <a href="#contacts">Одесса</a>
-      <a href="#contacts">Днепр</a>
-    </div>
-    <div class="top-nav__divider"></div>
-    <div class="row align-items-center topnav__bottom">
-      <a href="#main" onclick="document.querySelector('.top-nav__menu').classList.remove('show')">Главная</a>
-      <a href="#stages" onclick="document.querySelector('.top-nav__menu').classList.remove('show')">Этапы
-        сотрудничества</a>
-      <a href="#catalog" onclick="document.querySelector('.top-nav__menu').classList.remove('show')">Каталог</a>
-      <a href="#reviews" onclick="document.querySelector('.top-nav__menu').classList.remove('show')">Отзывы</a>
-      <a href="#team" onclick="document.querySelector('.top-nav__menu').classList.remove('show')">Команда</a>
-      <a href="#contacts" onclick="document.querySelector('.top-nav__menu').classList.remove('show')">Контакты</a>
-    </div>
-  </div>
-</nav>
 <header>
   <div class="container">
     <div class="top">
@@ -101,7 +81,35 @@
     </div>
   </div>
 </header>
-
+<nav class="top-nav__menu">
+  <div class="container top-nav__container">
+    <div class="row align-items-center topnav__cities">
+      <a href="#contacts">Киев</a>
+      <a href="#contacts">Харьков</a>
+      <a href="#contacts">Одесса</a>
+      <a href="#contacts">Днепр</a>
+    </div>
+    <div class="top-nav__divider"></div>
+    <div class="row align-items-center topnav__bottom">
+      <a href="#main" onclick="document.querySelector('.top-nav__menu').classList.remove('show')">Главная</a>
+      <a href="#stages" onclick="document.querySelector('.top-nav__menu').classList.remove('show')">Этапы
+        сотрудничества</a>
+      <a href="#catalog" onclick="document.querySelector('.top-nav__menu').classList.remove('show')">Каталог</a>
+      <a href="#reviews" onclick="document.querySelector('.top-nav__menu').classList.remove('show')">Отзывы</a>
+      <a href="#team" onclick="document.querySelector('.top-nav__menu').classList.remove('show')">Команда</a>
+      <a href="#contacts" onclick="document.querySelector('.top-nav__menu').classList.remove('show')">Контакты</a>
+    </div>
+    <div class="top__callback__select-language d-flex d-lg-none mt-4 mr-0">
+      <a class="px-2 active" href="" style="line-height: 1 !important;">RU</a>
+      <a class="px-2" href="" style="line-height: 1 !important;">UA</a>
+    </div>
+    <div class="burger-close--mobile d-block d-lg-none" onclick="document.querySelector('.top-nav__menu').classList.remove('show');">
+      <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7.5026 5.9349C7.41603 5.84834 7.41603 5.70796 7.5026 5.6214L10.9512 2.17284L9.38363 0.605312L5.93507 4.05387C5.84851 4.14044 5.70813 4.14044 5.62157 4.05387L2.17301 0.605312L0.605482 2.17284L4.05404 5.6214C4.14061 5.70796 4.14061 5.84834 4.05404 5.9349L0.605482 9.38346L2.17301 10.951L5.62157 7.50243C5.70813 7.41586 5.84851 7.41586 5.93507 7.50243L9.38363 10.951L10.9512 9.38346L7.5026 5.9349Z" fill="#D05216"/>
+      </svg>
+    </div>
+  </div>
+</nav>
 
 <section id="main" class="section section--main">
   <div class="container">
