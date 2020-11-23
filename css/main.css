@@ -2454,6 +2454,9 @@ footer .copyright {
 
 }
 @media (max-width: 767px){
+  .videos__container{
+    margin-top: 0;
+  }
   .main__card {
     padding: 10px;
     height: 100%;
