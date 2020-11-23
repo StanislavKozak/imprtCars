@@ -3,34 +3,58 @@ $(document).ready(function () {
     $(".compare__container").slick({
       arrows: false,
       infinite: false,
+      draggable: true,
+      swipe: true,
       slidesToShow: 1,
     });
     $(".main-bottom-slider").slick({
       arrows: false,
       infinite: false,
+      draggable: true,
+      swipe: true,
       slidesToShow: 2,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            arrows: false,
+            swipe: true,
+            slidesToScroll: 2,
+            draggable: true,
+            infinite: false
+          }
+        }]
     });
     $(".videos__container").slick({
       arrows: false,
       infinite: false,
+      draggable: true,
+      swipe: true,
       slidesToShow: 1,
     });
   }
   $(".stages--one").slick({
     arrows: false,
     infinite: false,
+    draggable: true,
+    swipe: true,
     asNavFor: '.stages__nav--one'
   });
   $(".stages__nav--one").slick({
     asNavFor: '.stages--one',
     slidesToShow: 9,
     focusOnSelect: true,
+    draggable: true,
+    swipe: true,
     responsive: [
       {
         breakpoint: 1025,
         settings: {
           slidesToShow: 5,
           arrows: false,
+          draggable: true,
+          swipe: true,
           infinite: false
         }
       },
@@ -39,6 +63,8 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 2,
           arrows: false,
+          draggable: true,
+          swipe: true,
           infinite: false
         }
       }
@@ -48,18 +74,24 @@ $(document).ready(function () {
   $(".stages--two").slick({
     arrows: false,
     infinite: false,
+    draggable: true,
+    swipe: true,
     asNavFor: '.stages__nav--two'
   });
   $(".stages__nav--two").slick({
     asNavFor: '.stages--two',
     slidesToShow: 5,
     focusOnSelect: true,
+    draggable: true,
+    swipe: true,
     responsive: [
       {
         breakpoint: 1025,
         settings: {
           slidesToShow: 3,
           arrows: false,
+          draggable: true,
+          swipe: true,
           infinite: false
         }
       },
@@ -68,6 +100,8 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 2,
           arrows: false,
+          draggable: true,
+          swipe: true,
           infinite: false
         }
       }
@@ -78,12 +112,16 @@ $(document).ready(function () {
     arrows: false,
     slidesToShow: 4,
     focusOnSelect: true,
+    draggable: true,
+    swipe: true,
     responsive: [
       {
         breakpoint: 769,
         settings: {
           slidesToShow: 2,
           arrows: false,
+          draggable: true,
+          swipe: true,
           infinite: false
         }
       },
@@ -92,6 +130,8 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 2,
           arrows: false,
+          draggable: true,
+          swipe: true,
           infinite: false
         }
       }
@@ -99,6 +139,8 @@ $(document).ready(function () {
   });
   $(".reviews-slider").slick({
     arrows: false,
+    draggable: true,
+    swipe: true,
     slidesToShow: 1,
   });
 
@@ -117,10 +159,21 @@ $(document).ready(function () {
     e.preventDefault();
     var target = this.hash,
       $target = $(target);
+    var offset = 118;
+    if(window.innerWidth < 1025){
+      offset = 98;
+    }
+    if(window.innerWidth < 1024){
+      offset = 58;
+    }
     $('.show').removeClass('show');
     $('html, body').animate( {
-      'scrollTop': $target.offset().top-80
-    }, 900, 'swing');
+      'scrollTop': $target.offset().top - offset
+    }, 900, 'swing', function(){
+      setTimeout(function () {
+        $('body').removeClass('sticky');
+      },100);
+    });
   } );
 
 
