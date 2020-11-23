@@ -39,6 +39,7 @@ section {
 }
 html{
   font-size: 14px;
+  overflow-x: hidden;
 }
 body{
   padding-top: 120px;
