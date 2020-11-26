@@ -54,10 +54,13 @@ header {
   width: 100%;
   /*transition: all 0s;*/
   /*transition: transform 0.25s ease;*/
-  transition: 0.25s;
+  /*transition: 0.25s;*/
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.17);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.17);
   position: fixed;
+}
+.modal-open header{
+  padding-right: 17px;
 }
 /*.sticky body{*/
 /*  padding-top: 80px;*/
@@ -1665,7 +1668,7 @@ footer .copyright {
   width: 100%;
   z-index: 998;
   transform: translateY(0%);
-  transition: 0.25s;
+  /*transition: 0.25s;*/
 }
 .sticky .top-nav__menu{
   /*top: 0;*/
@@ -2457,6 +2460,10 @@ footer .copyright {
   .videos__container{
     margin-top: 0;
   }
+  .modal-dialog{
+    margin-left: auto;
+    margin-right: auto;
+  }
   .main__card {
     padding: 10px;
     height: 100%;
@@ -2752,6 +2759,13 @@ footer .copyright {
   #test__modal .p1 {
     font-size: 12px;
   }
+  #callback__modal .modal-dialog {
+    width: 300px;
+  }
+  .modal .modal-content {
+    padding: 30px 40px;
+    background-color: #1A1B1B;
+  }
   .top__logo {
     margin-left: 5px !important;
   }
@@ -2808,7 +2822,9 @@ footer .copyright {
   min-height: 195px;
 }
 
-
+#test__modal__form_6.active + .stages--block .stages--block__indicator{
+  display: none !important;
+}
 
 @keyframes pulse {
   0%{
