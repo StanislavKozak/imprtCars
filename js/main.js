@@ -241,7 +241,6 @@ $(document).ready(function () {
           "#test__modal__form .item.active .input__wrapper > select"
         ).value;
       }
-      console.log();
     }else{
       check_target = true;
     }
