@@ -2126,6 +2126,7 @@ footer .copyright {
 }
 
 .section--reviews{
+  background-color: #E5E5E5;
   background-image: url(../imgs/reviews_bg.png);
   background-position: top right;
   background-repeat: no-repeat;
@@ -2806,9 +2807,6 @@ footer .copyright {
   }
 }
 
-
-
-
 .compare__arrow{
   cursor: pointer;
   box-sizing: content-box;
@@ -2826,6 +2824,211 @@ footer .copyright {
   display: none !important;
 }
 
+.tariff__card{
+  background-color: #fff;
+}
+.tariff__header{
+  padding: 30px 50px;
+  text-transform: uppercase;
+  color: #282828;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 50px;
+  background-color: #fff;
+}
+.tariff__header--blue{
+  background-color: #003082;
+  color: #fff;
+}
+hr.tariff__hr{
+  height: 1px;
+  margin: 0 40px;
+  background-color: #DCDCDC;
+  border: none;
+}
+.tariff__premium{
+  margin: 30px 40px;
+  margin-right: auto;
+  font-size: 16px;
+}
+ul.tariff__content{
+  margin: 30px 0;
+  padding-left: 40px;
+  list-style: none;
+}
+ul.tariff__content > li{
+  padding-left: 35px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  position: relative;
+  font-size: 16px;
+}
+ul.tariff__content > li:before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  background-image: url("../imgs/tariff_plus.png");
+  background-size: cover;
+  background-position: center;
+}
+.tariff__prices{
+  padding: 30px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+.tariff__price{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  position: relative;
+  margin: 0 8px;
+}
+.tariff__price--old:before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #D05216;
+}
+.tariff__button{
+  padding: 0 40px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.btn--black{
+  background-color: #1A1B1B;
+  color: #fff;
+}
+.btn--black:hover{
+  background-color: #0e0f0f;
+  filter: drop-shadow(0px 0px 5px #000000);
+  text-decoration: none;
+  color: #fff;
+}
+.tariff__card--base{
+  box-shadow: 0px 16px 20px 0px rgba(43, 43, 43, 0.10);
+}
+.tariff__card--base:hover{
+  box-shadow: 0px 16px 20px 0px rgba(43, 43, 43, 0.10) !important;
+}
+.tariff__card--premium{
+  margin-top: 60px;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+}
+.tariffs__bg{
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  transform: translateY(25%);
+  max-width: 70vw;
+  height: auto;
+  z-index: -1;
+}
+@media (max-width: 1023px){
+  .tariff__header{
+    text-align: center;
+  }
+  ul.tariff__content {
+    padding-left: 30px;
+  }
+  hr.tariff__hr {
+    margin: 0 30px;
+  }
+  .tariff__prices {
+    padding: 30px;
+  }
+  .tariff__button {
+    padding: 0 30px;
+    padding-bottom: 30px;
+  }
+  ul.tariff__content > li {
+    padding-left: 25px;
+  }
+  #tariffs .section-tittle .h2{
+    font-size: 48px !important;
+  }
+  .tariff__premium {
+    margin: 30px 30px;
+    margin-right: auto;
+  }
+  ul.tariff__content > li:before {
+    width: 10px;
+    height: 10px;
+  }
+}
+@media (max-width: 959px){
+  #tariffs .section-tittle .h2{
+    font-size: 36px !important;
+  }
+  .tariff__header {
+    padding: 15px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  ul.tariff__content {
+    margin: 15px 0;
+    padding-left: 10px;
+  }
+  ul.tariff__content > li {
+    padding-left: 12px;
+    font-size: 10px;
+  }
+  ul.tariff__content > li:before {
+    width: 7px;
+    height: 7px;
+  }
+  .tariff__prices {
+    padding: 15px;
+  }
+  .tariff__price {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  hr.tariff__hr {
+    margin: 0 15px;
+  }
+  .tariff__button {
+    padding: 0px;
+    padding-bottom: 0px;
+  }
+  .tariff__premium{
+    font-size: 10px;
+    margin: 15px;
+    margin-right: auto;
+  }
+  .mobile-pr-1{
+    padding-right: 5px !important;
+  }
+  .mobile-pl-1{
+    padding-left: 5px !important;
+  }
+  .tariff__card--premium {
+    margin-top: 30px;
+    border: none;
+  }
+}
+@media (max-width: 767px){
+  #tariffs .section-tittle .h2 {
+    font-size: 14px !important;
+  }
+  ul.tariff__content > li{
+    margin-bottom: 5px;
+  }
+  #tariffs .btn-core {
+    font-size: 7px;
+  }
+}
 @keyframes pulse {
   0%{
     text-shadow: rgba(208, 82, 22, 0.25) 1px 0 5px;
