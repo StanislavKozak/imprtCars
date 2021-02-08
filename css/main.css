@@ -2935,6 +2935,9 @@ ul.tariff__content > li:before{
   height: auto;
   z-index: -1;
 }
+.review-photo img{
+  max-height: 355px;
+}
 @media (max-width: 1023px){
   .tariff__header{
     text-align: center;
